@@ -82,10 +82,15 @@ import fr.mediclogger.app.Models.Session;
 
 @SuppressLint("SetTextI18n") // UI templates are resolved through I18n resources; user text is never translated.
 public class MainActivity extends Activity {
-    private static final int BG=0xffffffff, INK=0xff302326, MUTED=0xff6d6063,
-            ACCENT=0xffb63840, PALE=0xfffbe7e7, LINE=0xffeadfe0, WHITE=Color.WHITE,
-            AMBER=0xff8a5318, AMBER_BG=0xfffff2dd, RED=0xffb63840;
-    private static final int[] COLORS={ACCENT,0xff5377ae,0xffa37442,0xff8e6ba9,0xffbd6b75,0xff64748b};
+    private int BG, INK, MUTED, ACCENT, PALE, LINE, SURFACE, ON_ACCENT, AMBER, AMBER_BG, RED;
+    private boolean night;
+    private static final int WHITE=Color.WHITE;
+    private void initPalette() {
+        night=(getResources().getConfiguration().uiMode&android.content.res.Configuration.UI_MODE_NIGHT_MASK)==android.content.res.Configuration.UI_MODE_NIGHT_YES;
+        if(night){BG=SURFACE=0xff161213;INK=0xfff3eaea;MUTED=0xffb9abad;ACCENT=RED=0xffff9aa0;PALE=0xff3a2326;LINE=0xff3a3032;ON_ACCENT=0xff2a0d10;AMBER=0xffffc27a;AMBER_BG=0xff3d2e14;}
+        else{BG=SURFACE=0xffffffff;INK=0xff302326;MUTED=0xff6d6063;ACCENT=RED=0xffb63840;PALE=0xfffbe7e7;LINE=0xffeadfe0;ON_ACCENT=0xffffffff;AMBER=0xff8a5318;AMBER_BG=0xfffff2dd;}
+    }
+    private static final int[] COLORS={0xffb63840,0xff5377ae,0xffa37442,0xff8e6ba9,0xffbd6b75,0xff64748b};
     private static final String[] COLOR_NAMES={"Red","Blue","Amber","Purple","Rose","Slate"};
     private static final int CREATE_EXPORT=401,CHOOSE_REMINDER_SOUND=402;
     private final Handler handler=new Handler(Looper.getMainLooper());
@@ -120,6 +125,7 @@ public class MainActivity extends Activity {
 
     @Override public void onCreate(Bundle state) {
         super.onCreate(state);
+        initPalette();
         if(state!=null&&state.containsKey("medic-state")){
             Parcel parcel=Parcel.obtain();
             try{byte[] plain=CryptoBox.open(state.getByteArray("medic-state"),"activity-state");parcel.unmarshall(plain,0,plain.length);parcel.setDataPosition(0);state=parcel.readBundle(getClassLoader());}
@@ -140,9 +146,14 @@ public class MainActivity extends Activity {
             calendarDay=LocalDate.parse(state.getString("calendar_day",calendarDay.toString()));
             calendarMonth=YearMonth.parse(state.getString("calendar_month",calendarMonth.toString()));
         }
-        if(Build.VERSION.SDK_INT>=30) getWindow().setDecorFitsSystemWindows(false);
-        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR|View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR|View.SYSTEM_UI_FLAG_LAYOUT_STABLE|View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN|View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION);
-        render();if(state!=null&&screen==3)restoreScroll(state.getInt("export_scroll",0));refreshShortcuts();handler.postDelayed(clockRefresh,60000);
+        if(Build.VERSION.SDK_INT>=30) {
+            getWindow().setDecorFitsSystemWindows(false);
+        } else {
+            int flags=View.SYSTEM_UI_FLAG_LAYOUT_STABLE|View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN|View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION;
+            if(!night) flags|=View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR|View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR;
+            getWindow().getDecorView().setSystemUiVisibility(flags);
+        }
+        render();applySystemBarAppearance();if(state!=null&&screen==3)restoreScroll(state.getInt("export_scroll",0));refreshShortcuts();handler.postDelayed(clockRefresh,60000);
         if(state==null) handleShortcut(getIntent());
     }
     @Override protected void onNewIntent(Intent intent) { super.onNewIntent(intent); setIntent(intent); handleShortcut(intent); }
@@ -184,6 +195,20 @@ public class MainActivity extends Activity {
             .setNegativeButton(tr("Cancel"),null).setPositiveButton(tr("Log dose"),(d,w)->take(m)).show();
     }
 
+    private final Map<Long,Medicine> medicineCache=new LinkedHashMap<>();
+    /** One lookup per medicine per screen build instead of one database query per dose card. */
+    private Medicine cachedMedicine(long id){
+        if(medicineCache.isEmpty()) for(Medicine m:store.medicines(true)) medicineCache.put(m.id,m);
+        return medicineCache.get(id);
+    }
+    /** Needs a content view first: the window's insets controller does not exist before setContentView. */
+    private void applySystemBarAppearance(){
+        if(Build.VERSION.SDK_INT<30) return;
+        android.view.WindowInsetsController bars=getWindow().getInsetsController();
+        if(bars==null) return;
+        int light=android.view.WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS|android.view.WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS;
+        bars.setSystemBarsAppearance(night?0:light,light);
+    }
     private void renderKeepingScroll(){int position=scroll==null?0:scroll.getScrollY();render();restoreScroll(position);}
     private void restoreScroll(int position){
         ScrollView target=scroll;target.getViewTreeObserver().addOnPreDrawListener(new android.view.ViewTreeObserver.OnPreDrawListener(){
@@ -191,6 +216,7 @@ public class MainActivity extends Activity {
         });
     }
     private void render() {
+        medicineCache.clear();
         StatusNotifications.update(this);ReminderScheduler.reschedule(this,false);
         root=column(); root.setBackgroundColor(BG);
         root.setOnApplyWindowInsetsListener((v,insets)-> {
@@ -215,12 +241,12 @@ public class MainActivity extends Activity {
         switch(screen) { case 1 -> journal(); case 2 -> medicines(); case 3 -> exportPage(); case 4 -> settingsPage(); case 5 -> calendarPage(); case 6 -> remindersPage(); default -> dashboard(); }
         if(screen==3)exportFooter();
         View divider=new View(this);divider.setBackgroundColor(LINE);root.addView(divider,new LinearLayout.LayoutParams(-1,dp(1)));
-        nav=row(); nav.setBackgroundColor(WHITE); nav.setPadding(dp(4),dp(8),dp(4),dp(8));
+        nav=row(); nav.setBackgroundColor(SURFACE); nav.setPadding(dp(4),dp(8),dp(4),dp(8));
         String[] labels={"Today","Journal","Calendar","Meds","Export"};String[] icons={"home","clock","calendar","pill","export"};int[] targets={0,1,5,2,3};
         for(int i=0;i<5;i++) {
             final int target=targets[i];
             LinearLayout item=column();item.setGravity(Gravity.CENTER);item.setMinimumHeight(dp(64));item.setBackground(ripple(Color.TRANSPARENT,16));
-            FrameLayout indicator=new FrameLayout(this);indicator.setBackground(shape(target==screen?PALE:WHITE,20,0));
+            FrameLayout indicator=new FrameLayout(this);indicator.setBackground(shape(target==screen?PALE:SURFACE,20,0));
             ImageView img=icon(icons[i],target==screen?ACCENT:MUTED,24);indicator.addView(img,new FrameLayout.LayoutParams(dp(24),dp(24),Gravity.CENTER));
             LinearLayout.LayoutParams ip=lp(64,32);ip.gravity=Gravity.CENTER_HORIZONTAL;item.addView(indicator,ip);gap(item,4,false);
             TextView label=text(tr(labels[i]),12,target==screen?INK:MUTED,target==screen);label.setGravity(Gravity.CENTER);item.addView(label,new LinearLayout.LayoutParams(-1,-2));
@@ -286,19 +312,19 @@ public class MainActivity extends Activity {
         if(!takenOnly.isEmpty()){gap(page,20,false);section("Taken today",null,null);for(Session s:takenOnly)doseCard(page,s,false);}
     }
     private LinearLayout stat(String label,long value,String kind) {
-        LinearLayout tile=row();tile.setPadding(dp(16),dp(16),dp(12),dp(16));tile.setBackground(shape(WHITE,18,LINE));
+        LinearLayout tile=row();tile.setPadding(dp(16),dp(16),dp(12),dp(16));tile.setBackground(shape(SURFACE,18,LINE));
         LinearLayout values=column();values.addView(text(Long.toString(value),28,INK,false));gap(values,4,false);values.addView(text(tr(label),12,MUTED,false));tile.addView(values,new LinearLayout.LayoutParams(0,-2,1));
         tile.addView(icon(kind,ACCENT,24),lp(24,24));return tile;
     }
     private void doseCard(LinearLayout parent,Session s,boolean actions) {
-        Medicine current=store.medicine(s.medicineId);int color=current==null?s.color:current.color;
+        Medicine current=cachedMedicine(s.medicineId);int color=current==null?s.color:current.color;
         LinearLayout c=card();
         LinearLayout top=row();FrameLayout well=new FrameLayout(this);well.setBackground(shape(tint(color),12,0));well.addView(icon("pill",color,22),new FrameLayout.LayoutParams(dp(22),dp(22),Gravity.CENTER));top.addView(well,lp(40,40));gap(top,12,true);
         LinearLayout names=column(); names.addView(text(s.label(),16,INK,true));
         String desc=(s.alias.isEmpty()?"":s.medicineName)+(s.dose.isEmpty()?"":(s.alias.isEmpty()?"":" · ")+s.dose);
         if(!desc.isEmpty()) {gap(names,3,false); names.addView(text(desc,12,MUTED,false));}
         top.addView(names,new LinearLayout.LayoutParams(0,-2,1));
-        TextView more=text(tr("⋮"),25,MUTED,false);more.setGravity(Gravity.CENTER);more.setContentDescription(tr("Dose details")+": "+s.medicineName);more.setBackground(ripple(WHITE,24));more.setOnClickListener(v->sessionDialog(s.id));
+        TextView more=text(tr("⋮"),25,MUTED,false);more.setGravity(Gravity.CENTER);more.setContentDescription(tr("Dose details")+": "+s.medicineName);more.setBackground(ripple(SURFACE,24));more.setOnClickListener(v->sessionDialog(s.id));
         top.addView(more,lp(48,48));c.addView(top);gap(c,12,false);
         if(!s.monitorEffects){
             c.addView(badge("Taken",MUTED,BG));gap(c,12,false);c.addView(text(fullTime(s.takenAt),14,INK,false));
@@ -422,7 +448,7 @@ public class MainActivity extends Activity {
     }
     private void exportFooter() {
         boolean valid=!exportTo.isBefore(exportFrom);int count=valid?exportData().events.size():0;
-        LinearLayout footer=column();footer.setPadding(dp(20),dp(12),dp(20),dp(12));footer.setBackgroundColor(WHITE);
+        LinearLayout footer=column();footer.setPadding(dp(20),dp(12),dp(20),dp(12));footer.setBackgroundColor(SURFACE);
         footer.addView(text(valid?tr("%d events selected",count):tr("End date must be on or after start date."),12,valid?MUTED:RED,false));gap(footer,8,false);
         Button save=button(exporting?"Preparing…":"Save export",true,this::startExport);save.setEnabled(!exporting&&valid&&count>0);save.setAlpha(save.isEnabled()?1:.45f);footer.addView(save);root.addView(footer);
     }
@@ -509,11 +535,11 @@ public class MainActivity extends Activity {
         rail.removeAllViews();LinkedHashSet<Integer> palette=new LinkedHashSet<>();for(int color:COLORS)palette.add(color);palette.addAll(AppPrefs.colors(this));palette.add(chosen[0]);
         int index=0;
         for(int color:palette){
-            TextView circle=text(chosen[0]==color?"✓":"",20,Color.luminance(color)>.45?INK:WHITE,true);circle.setGravity(Gravity.CENTER);circle.setTag(color);circle.setBackground(shape(color,24,LINE));
+            TextView circle=text(chosen[0]==color?"✓":"",20,Color.luminance(color)>.45?0xff302326:Color.WHITE,true);circle.setGravity(Gravity.CENTER);circle.setTag(color);circle.setBackground(shape(color,24,LINE));
             circle.setContentDescription(index<COLOR_NAMES.length?tr(COLOR_NAMES[index])+" · "+tr("Color"):tr("Custom color")+" "+hex(color));
             circle.setOnClickListener(v->{chosen[0]=color;fillColors(rail,chosen);});LinearLayout.LayoutParams params=lp(48,48);params.setMargins(0,0,dp(8),0);rail.addView(circle,params);index++;
         }
-        TextView add=text("+",28,ACCENT,false);add.setGravity(Gravity.CENTER);add.setBackground(ripple(WHITE,24));add.setContentDescription(tr("Create color"));
+        TextView add=text("+",28,ACCENT,false);add.setGravity(Gravity.CENTER);add.setBackground(ripple(SURFACE,24));add.setContentDescription(tr("Create color"));
         add.setOnClickListener(v->colorDialog(chosen[0],color->{AppPrefs.addColor(this,color);chosen[0]=color;fillColors(rail,chosen);rail.post(()->((HorizontalScrollView)rail.getParent()).fullScroll(View.FOCUS_RIGHT));}));rail.addView(add,lp(48,48));
     }
     private long quantity(String input){
@@ -794,8 +820,8 @@ public class MainActivity extends Activity {
             for(int col=0;col<7;col++){
                 int dayNumber=rowIndex*7+col-offset+1;LinearLayout cell=column();cell.setGravity(Gravity.CENTER);cell.setMinimumHeight(dp(52));
                 if(dayNumber>0&&dayNumber<=calendarMonth.lengthOfMonth()){
-                    LocalDate day=calendarMonth.atDay(dayNumber);boolean chosen=day.equals(calendarDay);TextView number=text(Integer.toString(dayNumber),14,chosen?WHITE:INK,chosen);number.setGravity(Gravity.CENTER);
-                    number.setBackground(shape(chosen?ACCENT:WHITE,18,day.equals(LocalDate.now())&&!chosen?ACCENT:0));cell.addView(number,lp(32,32));gap(cell,3,false);
+                    LocalDate day=calendarMonth.atDay(dayNumber);boolean chosen=day.equals(calendarDay);TextView number=text(Integer.toString(dayNumber),14,chosen?ON_ACCENT:INK,chosen);number.setGravity(Gravity.CENTER);
+                    number.setBackground(shape(chosen?ACCENT:SURFACE,18,day.equals(LocalDate.now())&&!chosen?ACCENT:0));cell.addView(number,lp(32,32));gap(cell,3,false);
                     View dot=new View(this);dot.setBackground(shape(eventsByDay.containsKey(day)?ACCENT:Color.TRANSPARENT,3,0));cell.addView(dot,lp(4,4));cell.setBackground(ripple(Color.TRANSPARENT,16));cell.setContentDescription(shortDate(day)+" · "+tr("%d events",eventsByDay.getOrDefault(day,0)));cell.setOnClickListener(v->{calendarDay=day;render();});
                 }
                 week.addView(cell,new LinearLayout.LayoutParams(0,-2,1));
@@ -839,16 +865,16 @@ public class MainActivity extends Activity {
     private void gap(LinearLayout l,int size,boolean horizontal){l.addView(new View(this),lp(horizontal?size:1,horizontal?1:size));}
     private TextView text(String value,float size,int color,boolean bold){TextView t=new TextView(this);t.setText(value);t.setTextSize(Math.max(12,size));t.setTextColor(color);t.setFontFeatureSettings("kern");t.setTypeface(Typeface.create(bold?"sans-serif-medium":"sans-serif",Typeface.NORMAL));t.setIncludeFontPadding(false);return t;}
     private GradientDrawable shape(int color,int radius,int stroke){GradientDrawable d=new GradientDrawable();d.setColor(color);d.setCornerRadius(dp(radius));if(stroke!=0)d.setStroke(dp(1),stroke);return d;}
-    private Drawable ripple(int color,int radius){return new RippleDrawable(ColorStateList.valueOf(0x22b63840),shape(color,radius,color==WHITE?LINE:0),shape(WHITE,radius,0));}
-    private LinearLayout card(){LinearLayout c=column();c.setPadding(dp(16),dp(16),dp(16),dp(16));c.setBackground(shape(WHITE,20,LINE));return c;}
+    private Drawable ripple(int color,int radius){return new RippleDrawable(ColorStateList.valueOf(0x22b63840),shape(color,radius,color==SURFACE?LINE:0),shape(SURFACE,radius,0));}
+    private LinearLayout card(){LinearLayout c=column();c.setPadding(dp(16),dp(16),dp(16),dp(16));c.setBackground(shape(SURFACE,20,LINE));return c;}
     private TextView badge(String label,int color,int bg){TextView t=text(tr(label),12,color,true);t.setPadding(dp(10),dp(5),dp(10),dp(5));t.setBackground(shape(bg,8,0));return t;}
-    private TextView chip(String label,boolean selected){TextView t=text(tr(label),12,selected?WHITE:ACCENT,true);t.setGravity(Gravity.CENTER);t.setPadding(dp(16),dp(12),dp(16),dp(12));t.setMinHeight(dp(48));t.setBackground(ripple(selected?ACCENT:PALE,24));return t;}
-    private Button button(String label,boolean primary,Runnable click){Button b=new Button(this);b.setText(tr(label));b.setTextSize(14);b.setAllCaps(false);b.setTypeface(Typeface.create("sans-serif-medium",Typeface.NORMAL));b.setTextColor(primary?WHITE:INK);b.setMinHeight(dp(48));b.setMinimumHeight(dp(48));b.setMinWidth(0);b.setMinimumWidth(0);b.setGravity(Gravity.CENTER);b.setPadding(dp(12),dp(12),dp(12),dp(12));b.setBackground(ripple(primary?ACCENT:WHITE,24));b.setStateListAnimator(null);b.setOnClickListener(v->click.run());b.setLayoutParams(new LinearLayout.LayoutParams(-1,-2));return b;}
+    private TextView chip(String label,boolean selected){TextView t=text(tr(label),12,selected?ON_ACCENT:ACCENT,true);t.setGravity(Gravity.CENTER);t.setPadding(dp(16),dp(12),dp(16),dp(12));t.setMinHeight(dp(48));t.setBackground(ripple(selected?ACCENT:PALE,24));return t;}
+    private Button button(String label,boolean primary,Runnable click){Button b=new Button(this);b.setText(tr(label));b.setTextSize(14);b.setAllCaps(false);b.setTypeface(Typeface.create("sans-serif-medium",Typeface.NORMAL));b.setTextColor(primary?ON_ACCENT:INK);b.setMinHeight(dp(48));b.setMinimumHeight(dp(48));b.setMinWidth(0);b.setMinimumWidth(0);b.setGravity(Gravity.CENTER);b.setPadding(dp(12),dp(12),dp(12),dp(12));b.setBackground(ripple(primary?ACCENT:SURFACE,24));b.setStateListAnimator(null);b.setOnClickListener(v->click.run());b.setLayoutParams(new LinearLayout.LayoutParams(-1,-2));return b;}
     private void section(String title,String action,Runnable click){LinearLayout r=row();r.addView(text(tr(title),18,INK,true),new LinearLayout.LayoutParams(0,-2,1));if(action!=null){TextView link=text(tr(action),12,click==null?MUTED:ACCENT,click!=null);link.setGravity(Gravity.CENTER);link.setMinHeight(dp(48));link.setMinWidth(dp(48));if(click!=null)link.setOnClickListener(v->click.run());r.addView(link);}page.addView(r);gap(page,8,false);}
-    private int tint(int color){return Color.rgb((int)(Color.red(color)*.09+255*.91),(int)(Color.green(color)*.09+255*.91),(int)(Color.blue(color)*.09+255*.91));}
+    private int tint(int color){double a=night?.2:.09;return Color.rgb((int)(Color.red(color)*a+Color.red(SURFACE)*(1-a)),(int)(Color.green(color)*a+Color.green(SURFACE)*(1-a)),(int)(Color.blue(color)*a+Color.blue(SURFACE)*(1-a)));}
     private LinearLayout form(){LinearLayout l=column();l.setPadding(dp(24),dp(12),dp(24),dp(16));return l;}
     private ScrollView formScroll(LinearLayout content){ScrollView s=new ScrollView(this);s.setFillViewport(false);s.addView(content,new ScrollView.LayoutParams(-1,-2));return s;}
-    private EditText edit(String hint,String value,int max,boolean multiline){EditText e=new EditText(this);e.setTextSize(16);e.setMinHeight(dp(56));e.setTextColor(INK);e.setHintTextColor(MUTED);e.setHint(tr(hint));e.setText(value);e.setPadding(dp(13),dp(14),dp(13),dp(14));e.setBackground(shape(WHITE,12,LINE));e.setFilters(new InputFilter[]{new InputFilter.LengthFilter(max)});e.setInputType(InputType.TYPE_CLASS_TEXT|InputType.TYPE_TEXT_FLAG_CAP_SENTENCES|(multiline?InputType.TYPE_TEXT_FLAG_MULTI_LINE:0));e.setSingleLine(!multiline);if(multiline){e.setMinLines(3);e.setMaxLines(6);e.setGravity(Gravity.TOP|Gravity.START);}return e;}
+    private EditText edit(String hint,String value,int max,boolean multiline){EditText e=new EditText(this);e.setTextSize(16);e.setMinHeight(dp(56));e.setTextColor(INK);e.setHintTextColor(MUTED);e.setHint(tr(hint));e.setText(value);e.setPadding(dp(13),dp(14),dp(13),dp(14));e.setBackground(shape(SURFACE,12,LINE));e.setFilters(new InputFilter[]{new InputFilter.LengthFilter(max)});e.setInputType(InputType.TYPE_CLASS_TEXT|InputType.TYPE_TEXT_FLAG_CAP_SENTENCES|(multiline?InputType.TYPE_TEXT_FLAG_MULTI_LINE:0));e.setSingleLine(!multiline);if(multiline){e.setMinLines(3);e.setMaxLines(6);e.setGravity(Gravity.TOP|Gravity.START);}return e;}
     private EditText field(LinearLayout l,String label,String hint,String value,int max,boolean multiline){l.addView(text(tr(label),12,INK,true));gap(l,7,false);EditText e=edit(hint,value,max,multiline);e.setContentDescription(tr(label));l.addView(e,new LinearLayout.LayoutParams(-1,-2));gap(l,15,false);return e;}
     private ImageView icon(String kind,int color,int size){ImageView i=new ImageView(this);i.setImageDrawable(new LineIcon(kind,color));i.setImportantForAccessibility(View.IMPORTANT_FOR_ACCESSIBILITY_NO);return i;}
 

@@ -106,7 +106,7 @@ final class SecurePreferences implements SharedPreferences {
         @Override public Editor putBoolean(String key,boolean value){return put(key,value);}
         @Override public Editor remove(String key){return put(key,null);}
         @Override public Editor clear(){clear=true;return this;}
-        @Override public void apply(){if(!commit())throw new IllegalStateException("Could not save encrypted settings.");}
+        @Override public void apply(){if(!commit())android.util.Log.e("SecurePreferences","Could not save encrypted settings; the previous values were kept.");}
         @Override public boolean commit(){
             List<String> changed=new ArrayList<>();List<OnSharedPreferenceChangeListener> observers;
             synchronized(SecurePreferences.this){
