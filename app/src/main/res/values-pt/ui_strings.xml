@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
   <string name="ui_4d006c02bfad">%1$d d</string>
-  <string name="ui_a4d4b87a7270">%1$d dias de toma · %2$d dias de pausa</string>
   <plurals name="ui_848979eed592">
     <item quantity="one">%1$d toma</item>
     <item quantity="many">%1$d tomas</item>
@@ -97,6 +96,7 @@
   <string name="ui_923dd1771c36">Fechar toma</string>
   <string name="ui_6b040120dbeb">Fechar sem efeito?</string>
   <string name="ui_c21ead0614e7">Fecho</string>
+  <string name="ui_b1e36075532c">Café e croissant</string>
   <string name="ui_23abcd7095c7">Recolha e partilha</string>
   <string name="ui_6b73191a0a4b">Cor</string>
   <string name="ui_22a970d2e5b1">Concluídas</string>
@@ -177,6 +177,7 @@
   <string name="ui_5299a97cdeb4">Manter toma</string>
   <string name="ui_10291db37515">Guarde os registos durante o tempo que desejar. Elimine as tomas no Diário e depois os medicamentos quando já não tiverem tomas. Arquivar mantém o histórico. Limpe o armazenamento da aplicação no Android ou escolha Apagar aplicação no iOS para remover o diário local; Desinstalar aplicação no iOS mantém os dados. Elimine os ficheiros exportados separadamente.</string>
   <string name="ui_a4fe65264ef7">Idioma</string>
+  <string name="ui_5d6449e1f83b">Café grande</string>
   <string name="ui_671f17bd7267">Última toma há %1$s</string>
   <string name="ui_382ac5f308f7">Última atualização</string>
   <string name="ui_4787eaf7c938">Informações legais</string>
@@ -223,6 +224,7 @@
   <string name="ui_08c9ea69e744">Notificações e atalhos</string>
   <string name="ui_d5f42aed29ab">As notificações, as Atividades em Direto e os atalhos no ecrã principal podem mostrar os nomes e o estado dos medicamentos. Controle a sua visibilidade no Medic Logger e nas definições do dispositivo. A permissão de notificações é usada para estados e lembretes de medicação; o acesso a alarmes no Android ajuda a apresentar os lembretes à hora escolhida.</string>
   <string name="ui_2c9267494638">Pausa · Dia %1$d de %2$d</string>
+  <string name="ui_565339bc4d33">OK</string>
   <string name="ui_b73d757a91f2">Toma · Dia %1$d de %2$d</string>
   <string name="ui_e3ad9659cccd">Ciclo de toma/pausa</string>
   <string name="ui_9353ecdd547c">Oferecer-me um café</string>
@@ -231,9 +233,10 @@
   <string name="ui_a91120019507">Só é possível eliminar medicamentos sem tomas registadas.</string>
   <string name="ui_5dfe314666d5">Início</string>
   <string name="ui_c9f6d0ff74eb">Licenças de código aberto</string>
-  <string name="ui_6d8d011eb9d3">Ao abrir um site, este recebe as informações normais de ligação do seu navegador. O Ko-fi e os seus prestadores de pagamento tratam os donativos opcionais segundo as suas próprias políticas. O Medic Logger não inclui dados do diário nestas ligações. Se contactar o apoio por e-mail, Zerrino recebe o seu endereço e mensagem para responder e conserva-os apenas durante o tempo necessário para esse pedido e obrigações legais aplicáveis. Inclua informações de saúde apenas se optar por as partilhar.</string>
+  <string name="ui_d8d979e34e7f">Ao abrir um site, este recebe as informações normais de ligação do seu navegador. Os donativos opcionais são processados pelo Google Play no Android, e pelo Ko-fi e os seus prestadores de pagamento no iPhone, segundo as suas próprias políticas. O Medic Logger não inclui dados do diário nos donativos nem nas ligações. Se contactar o apoio por e-mail, Zerrino recebe o seu endereço e mensagem para responder e conserva-os apenas durante o tempo necessário para esse pedido e obrigações legais aplicáveis. Inclua informações de saúde apenas se optar por as partilhar.</string>
   <string name="ui_357222bbef4d">Terminar</string>
   <string name="ui_e7d332d99b95">Quantidade na embalagem (opcional)</string>
+  <string name="ui_fb2f66ab6029">Pagamento pendente</string>
   <string name="ui_5d09ee50ec65">Diário pessoal</string>
   <string name="ui_b50bb28b87d4">Prepare a exportação novamente.</string>
   <string name="ui_eea4fb33efd3">Tente novamente.</string>
@@ -281,6 +284,7 @@
   <string name="ui_ddbcf0672648">Silencioso</string>
   <string name="ui_28d03596d24e">Ignorar</string>
   <string name="ui_10ad4c387363">Cinzento</string>
+  <string name="ui_c3c9dfee84df">Café pequeno</string>
   <string name="ui_46124e023603">Som</string>
   <string name="ui_849ea0586467">Som e vibração</string>
   <string name="ui_ae936b5e8343">Som: %1$s</string>
@@ -295,10 +299,13 @@
   <string name="ui_c76e6790bc5b">Toma</string>
   <string name="ui_44428c9e4170">Toma às %1$s</string>
   <string name="ui_d31d487dc59a">Tomas registadas hoje</string>
+  <string name="ui_3afdda2c098f">Obrigado!</string>
   <string name="ui_1f8a89989c74">A hora da toma deve ser passada ou atual.</string>
   <string name="ui_ac959e83cab6">Os efeitos já foram registados.</string>
   <string name="ui_dbf40a948045">O fim deve ser posterior ao evento anterior, e não no futuro.</string>
   <string name="ui_0c9789f88460">O diário funciona offline, sem conta, publicidade, análise de utilização ou rastreio. O Medic Logger não envia o seu diário, identificadores do dispositivo ou histórico de utilização a Zerrino. Não acede ao HealthKit, ao Health Connect, aos seus contactos, à localização, à câmara ou ao microfone.</string>
+  <string name="ui_4f69a120de9e">O pagamento ainda tem de ser confirmado. Obrigado pela sua paciência!</string>
+  <string name="ui_a3beb4918b8b">Não foi possível concluir a doação. Tente novamente mais tarde.</string>
   <string name="ui_e848b24dab98">Não existem eventos neste período.</string>
   <string name="ui_d6a2d5565cfb">Esta toma já está fechada.</string>
   <string name="ui_57e6f9bf94db">Esta toma já não existe.</string>
@@ -315,8 +322,12 @@
   <string name="ui_9ab80672c2b9">A toma e os seus eventos serão eliminados.</string>
   <string name="ui_7e42863e7f6b">Hora de tomar %1$s</string>
   <string name="ui_0c0fd31c67d4">Horários</string>
+  <string name="ui_1ba6518f248a">Doação não concluída</string>
+  <string name="ui_8ded0b632a4d">As doações são opcionais e não desbloqueiam nada.</string>
+  <string name="ui_26ec2057bfd1">As doações não estão disponíveis de momento.</string>
   <string name="ui_f4b06ef6d3c8">Até</string>
   <string name="ui_2b065c7c9ce4">Hoje</string>
+  <string name="ui_d8b8392e2c54">Tentar novamente</string>
   <string name="ui_62cbca021268">Indique 1 a 3650 dias de toma e 0 a 3650 dias de pausa.</string>
   <string name="ui_d6807b3f9a54">Usar cor</string>
   <string name="ui_dbe7c6a622b1">Use as setas para mudar de toma.</string>
@@ -336,6 +347,7 @@
   <string name="ui_81f1f5eca5f2">O histórico de tomas será mantido.</string>
   <string name="ui_71bac4be8746">O seu diário</string>
   <string name="ui_1c44e25dbc68">Os seus registos e definições são encriptados no armazenamento privado da aplicação. As chaves de encriptação são protegidas pelo seu dispositivo. O Medic Logger não envia, sincroniza nem faz cópias de segurança automáticas do seu diário. Zerrino não pode recuperar dados perdidos da aplicação.</string>
+  <string name="ui_9c090a68f6b6">O seu apoio significa muito.</string>
   <string name="ui_230f0e709e4f">Ficheiro ZIP</string>
   <string name="ui_496433502b8d">ZIP · os três</string>
   <string name="ui_e27fe731d0da">Ex.: 10 mg · 1 comprimido</string>

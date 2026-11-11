@@ -101,7 +101,13 @@ public class MainActivity extends Activity {
     private int screen;
     private LocalDate exportFrom=LocalDate.now().minusDays(29), exportTo=LocalDate.now();
     private ExportWriter.Format exportFormat=ExportWriter.Format.EXCEL;
-    private boolean exportZip, exporting, showArchived;
+    private boolean exportZip, showArchived;
+    // Process-wide so an export keeps its state (and finishes on the new screen) if the activity is recreated.
+    private static volatile boolean exporting;
+    private static MainActivity latest;
+    private TipJar tipJar;
+    private final ExecutorService sync=Executors.newSingleThreadExecutor();
+    private final java.util.concurrent.atomic.AtomicBoolean syncQueued=new java.util.concurrent.atomic.AtomicBoolean();
     private Set<Long> exportMedicineIds;
     private long reminderMedicineId=-1;
     private String journalQuery="";
@@ -126,6 +132,7 @@ public class MainActivity extends Activity {
     @Override public void onCreate(Bundle state) {
         super.onCreate(state);
         initPalette();
+        latest=this;tipJar=new TipJar(this,this::onTipChanged);
         if(state!=null&&state.containsKey("medic-state")){
             Parcel parcel=Parcel.obtain();
             try{byte[] plain=CryptoBox.open(state.getByteArray("medic-state"),"activity-state");parcel.unmarshall(plain,0,plain.length);parcel.setDataPosition(0);state=parcel.readBundle(getClassLoader());}
@@ -174,7 +181,7 @@ public class MainActivity extends Activity {
         finally{parcel.recycle();}
     }
     @Override protected void onDestroy() {
-        handler.removeCallbacksAndMessages(null); worker.shutdown(); store.close(); super.onDestroy();
+        handler.removeCallbacksAndMessages(null); worker.shutdown(); sync.shutdown(); tipJar.close(); if(latest==this)latest=null; store.close(); super.onDestroy();
     }
     private void handleShortcut(Intent intent) {
         long id=intent.getLongExtra("medicine_id",-1);
@@ -209,6 +216,32 @@ public class MainActivity extends Activity {
         int light=android.view.WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS|android.view.WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS;
         bars.setSystemBarsAppearance(night?0:light,light);
     }
+    /** Notification and alarm refresh open the encrypted database; keep that off the UI thread and coalesce bursts. */
+    private void syncSystemSurfaces(){
+        if(!syncQueued.compareAndSet(false,true))return;
+        try{sync.execute(()->{syncQueued.set(false);StatusNotifications.update(this);ReminderScheduler.reschedule(this,false);});}
+        catch(java.util.concurrent.RejectedExecutionException closing){syncQueued.set(false);}
+    }
+    private void onTipChanged(){
+        if(isDestroyed())return;
+        TipJar.Status status=tipJar.status();
+        if(status==TipJar.Status.THANKED||status==TipJar.Status.PENDING||status==TipJar.Status.FAILED){
+            tipJar.clearStatus();
+            new AlertDialog.Builder(this).setTitle(tr(status==TipJar.Status.THANKED?"Thank you!":status==TipJar.Status.PENDING?"Payment pending":"Tip not completed"))
+                .setMessage(tr(status==TipJar.Status.THANKED?"Your support means a lot.":status==TipJar.Status.PENDING?"The payment still needs to be confirmed. Thank you for your patience!":"The tip could not be completed. Please try again later."))
+                .setPositiveButton(tr("OK"),null).show();
+        }
+        if(screen==4&&resumed)renderKeepingScroll();
+    }
+    private static void onLatest(java.util.function.Consumer<MainActivity> action){
+        MainActivity activity=latest;
+        if(activity!=null&&!activity.isDestroyed())activity.runOnUiThread(()->action.accept(activity));else exporting=false;
+    }
+    private void launchExportPicker(String filename,String mime,File pending){
+        Intent intent=new Intent(Intent.ACTION_CREATE_DOCUMENT).addCategory(Intent.CATEGORY_OPENABLE).setType(mime).putExtra(Intent.EXTRA_TITLE,filename).putExtra(Intent.EXTRA_LOCAL_ONLY,true);
+        try{startActivityForResult(intent,CREATE_EXPORT);}
+        catch(Exception e){pending.delete();AppPrefs.exports(this).edit().remove("pending_export").apply();toast("No file picker is available on this device.");}
+    }
     private void renderKeepingScroll(){int position=scroll==null?0:scroll.getScrollY();render();restoreScroll(position);}
     private void restoreScroll(int position){
         ScrollView target=scroll;target.getViewTreeObserver().addOnPreDrawListener(new android.view.ViewTreeObserver.OnPreDrawListener(){
@@ -217,7 +250,7 @@ public class MainActivity extends Activity {
     }
     private void render() {
         medicineCache.clear();
-        StatusNotifications.update(this);ReminderScheduler.reschedule(this,false);
+        syncSystemSurfaces();
         root=column(); root.setBackgroundColor(BG);
         root.setOnApplyWindowInsetsListener((v,insets)-> {
             if(Build.VERSION.SDK_INT>=30) {
@@ -606,8 +639,9 @@ public class MainActivity extends Activity {
             try{
                 try(OutputStream out=CryptoBox.exportOutput(pending)){ExportWriter.write(out,data,format,zip);}
                 AppPrefs.exports(this).edit().putString("pending_export",pending.getAbsolutePath()).apply();
-                runOnUiThread(()->{exporting=false;if(isDestroyed())return;renderKeepingScroll();Intent intent=new Intent(Intent.ACTION_CREATE_DOCUMENT).addCategory(Intent.CATEGORY_OPENABLE).setType(zip?"application/zip":format.mime).putExtra(Intent.EXTRA_TITLE,filename).putExtra(Intent.EXTRA_LOCAL_ONLY,true);try{startActivityForResult(intent,CREATE_EXPORT);}catch(Exception e){pending.delete();AppPrefs.exports(this).edit().remove("pending_export").apply();toast("No file picker is available on this device.");}});
-            }catch(Exception e){pending.delete();runOnUiThread(()->{exporting=false;if(!isDestroyed()){renderKeepingScroll();toast(tr("Export failed: %s",e.getMessage()));}});}
+                String mime=zip?"application/zip":format.mime;
+                onLatest(a->{exporting=false;a.renderKeepingScroll();a.launchExportPicker(filename,mime,pending);});
+            }catch(Exception e){pending.delete();onLatest(a->{exporting=false;a.renderKeepingScroll();a.toast(a.tr("Export failed: %s",e.getMessage()));});}
         });
     }
     @Override protected void onActivityResult(int request,int result,Intent data) {
@@ -633,8 +667,8 @@ public class MainActivity extends Activity {
                     if(out==null)throw new java.io.IOException("The destination could not be opened.");byte[] buffer=new byte[32768];int n;while((n=in.read(buffer))!=-1)out.write(buffer,0,n);out.flush();
                 }
                 source.delete();AppPrefs.exports(this).edit().remove("pending_export").apply();
-                runOnUiThread(()->{exporting=false;if(!isDestroyed()){renderKeepingScroll();toast("Export saved");}});
-            }catch(Exception e){runOnUiThread(()->{exporting=false;if(!isDestroyed()){renderKeepingScroll();toast("Could not save the file. Please try exporting again.");}});}
+                onLatest(a->{exporting=false;a.renderKeepingScroll();a.toast("Export saved");});
+            }catch(Exception e){onLatest(a->{exporting=false;a.renderKeepingScroll();a.toast("Could not save the file. Please try exporting again.");});}
         });
     }
     private ShortcutInfo shortcut(Medicine m) {
@@ -680,10 +714,17 @@ public class MainActivity extends Activity {
         }
         if(Build.VERSION.SDK_INT>=31&&!ReminderScheduler.precise(this)){gap(reminders,12,false);reminders.addView(button("Allow precise reminders",false,this::openPreciseReminderSettings));}
         page.addView(reminders);gap(page,16,false);
-        LinearLayout support=card();support.addView(text(tr("Support Medic Logger"),16,INK,true));gap(support,12,false);support.addView(button("Offer me a coffee",true,()->{
-            try{startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://ko-fi.com/zerrino")).addCategory(Intent.CATEGORY_BROWSABLE));}
-            catch(android.content.ActivityNotFoundException unavailable){toast("No browser is available on this device.");}
-        }));gap(support,8,false);support.addView(text("Ko-fi · zerrino",12,MUTED,false));page.addView(support);gap(page,16,false);
+        tipJar.load();
+        LinearLayout support=card();support.addView(text(tr("Support Medic Logger"),16,INK,true));gap(support,8,false);
+        support.addView(text(tr("Tips are optional and unlock nothing."),12,MUTED,false));gap(support,12,false);
+        if(tipJar.products().isEmpty()){
+            support.addView(text(tr(tipJar.loaded()?"Tips are unavailable right now.":"…"),14,MUTED,false));
+            if(tipJar.loaded()){gap(support,8,false);support.addView(button("Try again",false,()->{tipJar.retry();renderKeepingScroll();}));}
+        }else for(com.android.billingclient.api.ProductDetails product:tipJar.products()){
+            TipJar.Tip tip=TipJar.Tip.of(product.getProductId());
+            support.addView(button(tr(tip==null?product.getName():tip.label)+" · "+TipJar.price(product),tip!=null&&tip==TipJar.Tip.SMALL,()->tipJar.buy(this,product)));gap(support,8,false);
+        }
+        page.addView(support);gap(page,16,false);
         LinearLayout legal=card();legal.addView(text(tr("Legal"),16,INK,true));gap(legal,8,false);
         legal.addView(button("Privacy policy",false,()->legalDocument(false)));gap(legal,8,false);
         legal.addView(button("Medical notice",false,()->legalDocument(true)));gap(legal,8,false);
@@ -754,7 +795,7 @@ public class MainActivity extends Activity {
         if(rule.frequency.equals("weekly")){List<String> days=new ArrayList<>();for(int day=1;day<=7;day++)if((rule.weekDays&(1<<(day-1)))!=0)days.add(DayOfWeek.of(day).getDisplayName(TextStyle.SHORT,AppPrefs.locale(this)));return String.join(", ",days);}
         if(rule.frequency.equals("monthly"))return rule.monthDays().stream().map(String::valueOf).collect(java.util.stream.Collectors.joining(", "));
         if(rule.frequency.equals("yearly"))return rule.yearDays().stream().map(day->day.atYear(2000).format(DateTimeFormatter.ofPattern("d MMM",AppPrefs.locale(this)))).collect(java.util.stream.Collectors.joining(", "));
-        if(rule.frequency.equals("cycle"))return tr("%d days ON · %d days OFF",rule.cycleOnDays,rule.cycleOffDays)+"\n"+tr("First ON day: %s",shortDate(rule.cycleStartDate()));
+        if(rule.frequency.equals("cycle"))return tr("Days ON")+": "+rule.cycleOnDays+" · "+tr("Days OFF")+": "+rule.cycleOffDays+"\n"+tr("First ON day: %s",shortDate(rule.cycleStartDate()));
         return "";
     }
     private String cyclePhase(ReminderRule rule){int position=rule.cyclePosition(LocalDate.now());if(position<0)return tr("Starts %s",shortDate(rule.cycleStartDate()));return position<rule.cycleOnDays?tr("ON · Day %d of %d",position+1,rule.cycleOnDays):tr("OFF · Day %d of %d",position-rule.cycleOnDays+1,rule.cycleOffDays);}

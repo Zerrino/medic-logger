@@ -11,8 +11,8 @@ android {
         applicationId 'fr.mediclogger.app'
         minSdk 26
         targetSdk 36
-        versionCode 9
-        versionName '1.4.3'
+        versionCode 10
+        versionName '1.4.4'
         testInstrumentationRunner project.findProperty('deviceTestRunner') ?: 'fr.mediclogger.app.LocalTestRunner'
     }
     compileOptions {
@@ -62,4 +62,6 @@ android {
 dependencies {
     implementation 'net.zetetic:sqlcipher-android:4.20.0'
     implementation 'androidx.sqlite:sqlite:2.7.0'
+    // Optional tips through Google Play (consumable in-app products that unlock nothing).
+    implementation 'com.android.billingclient:billing:9.1.0'
 }

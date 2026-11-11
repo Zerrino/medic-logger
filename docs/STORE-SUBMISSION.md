@@ -29,7 +29,7 @@ Sources: [Apple privacy requirements](https://developer.apple.com/app-store/revi
 | Account deletion | No app account is created. Doses/medicines can be deleted; the policy explains removal of the local journal and separate export copies. No server-side record deletion is claimed. |
 | Store description | Include the medical notice below. Avoid diagnosis, treatment, clinical-accuracy claims or promises that every reminder will arrive. |
 | Apple EULA | Apple's standard EULA applies if no custom agreement is supplied. This update introduces no subscription or custom service agreement. |
-| Donations | Ko-fi opens externally and grants no app content/features. Check the final configuration against the current payment/gifting rules for the intended storefronts; no nonprofit status is claimed. |
+| Donations | Android: optional consumable Google Play Billing products (`docs/PLAY-BILLING.md`) that grant no app content/features. iOS: Ko-fi opens externally. Check the final configuration against the current payment rules for each storefront. |
 
 Sources: [Google Health declaration](https://support.google.com/googleplay/android-developer/answer/14738291?hl=en), [Google on-device data definitions](https://support.google.com/googleplay/android-developer/answer/10787469?hl=en), [Apple collection definitions](https://developer.apple.com/app-store/app-privacy-details/), [Apple standard EULA](https://developer.apple.com/help/app-store-connect/manage-app-information/provide-a-custom-license-agreement), [Apple medical/payment guidelines](https://developer.apple.com/app-store/review/guidelines/).
 

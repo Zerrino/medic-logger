@@ -97,6 +97,10 @@ AndroidX SQLite 2.7.0 and AndroidX Annotation 1.9.1
 Copyright The Android Open Source Project
 https://developer.android.com/jetpack/androidx
 
+Google Play Billing Library 9.1.0
+Copyright Google LLC
+https://developer.android.com/google/play/billing
+
 Kotlin standard library 2.2.10
 https://github.com/JetBrains/kotlin
 
@@ -114,7 +118,7 @@ JetBrains Java annotations 13.0
 JetBrains s.r.o.
 https://github.com/JetBrains/java-annotations
 
-AndroidX, Kotlin and JetBrains annotations are licensed under the Apache License, Version 2.0:
+AndroidX, Google Play Billing, Kotlin and JetBrains annotations are licensed under the Apache License, Version 2.0:
 
 
                                  Apache License

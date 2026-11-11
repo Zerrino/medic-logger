@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
   <string name="ui_4d006c02bfad">%1$d 天</string>
-  <string name="ui_a4d4b87a7270">服药 %1$d 天 · 停药 %2$d 天</string>
   <plurals name="ui_848979eed592">
     <item quantity="other">%1$d 次服药</item>
   </plurals>
@@ -81,6 +80,7 @@
   <string name="ui_923dd1771c36">结束记录</string>
   <string name="ui_6b040120dbeb">结束此次记录，未观察到药效？</string>
   <string name="ui_c21ead0614e7">已关闭</string>
+  <string name="ui_b1e36075532c">咖啡和可颂</string>
   <string name="ui_23abcd7095c7">数据收集与共享</string>
   <string name="ui_6b73191a0a4b">颜色</string>
   <string name="ui_22a970d2e5b1">已结束</string>
@@ -161,6 +161,7 @@
   <string name="ui_5299a97cdeb4">保留记录</string>
   <string name="ui_10291db37515">记录的保留时间由您决定。先在日志中删除服药记录，再删除没有相关记录的药品。归档会保留历史。若要删除本地日志，请在 Android 中清除应用存储空间，或在 iOS 中选择“删除 App”；iOS 的“卸载 App”会保留数据。导出文件需另行删除。</string>
   <string name="ui_a4fe65264ef7">语言</string>
+  <string name="ui_5d6449e1f83b">大杯咖啡</string>
   <string name="ui_671f17bd7267">上次服药：%1$s前</string>
   <string name="ui_382ac5f308f7">最后更新</string>
   <string name="ui_4787eaf7c938">法律信息</string>
@@ -207,6 +208,7 @@
   <string name="ui_08c9ea69e744">通知与快捷方式</string>
   <string name="ui_d5f42aed29ab">通知、实时活动和主屏幕快捷方式可能显示药品名称及状态。您可在 Medic Logger 和设备设置中控制其显示方式。通知权限用于显示用药状态和提醒；Android 闹钟权限有助于在您选择的时间发送提醒。</string>
   <string name="ui_2c9267494638">停药 · 第 %1$d 天，共 %2$d 天</string>
+  <string name="ui_565339bc4d33">好</string>
   <string name="ui_b73d757a91f2">服药 · 第 %1$d 天，共 %2$d 天</string>
   <string name="ui_e3ad9659cccd">服药/停药周期</string>
   <string name="ui_9353ecdd547c">请我喝杯咖啡</string>
@@ -215,9 +217,10 @@
   <string name="ui_a91120019507">只能永久删除没有服药记录的药物。</string>
   <string name="ui_5dfe314666d5">起效</string>
   <string name="ui_c9f6d0ff74eb">开源许可</string>
-  <string name="ui_6d8d011eb9d3">打开网站时，该网站会接收浏览器正常连接所需的信息。Ko-fi 及其支付服务商依据各自的政策处理自愿捐赠。Medic Logger 不会在这些链接中包含日志数据。如果您通过电子邮件联系支持，Zerrino 会接收您的邮箱地址和消息以作回复，并仅在处理该请求及履行适用法律义务所需的期间保留这些信息。只有在您自愿分享时才请提供健康信息。</string>
+  <string name="ui_d8d979e34e7f">打开网站时，该网站会接收浏览器正常连接所需的信息。自愿捐赠在 Android 上由 Google Play 处理，在 iPhone 上由 Ko-fi 及其支付服务商处理，均依据各自的政策。Medic Logger 不会在捐赠或链接中包含日志数据。如果您通过电子邮件联系支持，Zerrino 会接收您的邮箱地址和消息以作回复，并仅在处理该请求及履行适用法律义务所需的期间保留这些信息。只有在您自愿分享时才请提供健康信息。</string>
   <string name="ui_357222bbef4d">结束</string>
   <string name="ui_e7d332d99b95">包装数量（可选）</string>
+  <string name="ui_fb2f66ab6029">付款待处理</string>
   <string name="ui_5d09ee50ec65">个人日志</string>
   <string name="ui_b50bb28b87d4">请重新准备导出文件。</string>
   <string name="ui_eea4fb33efd3">请重试。</string>
@@ -265,6 +268,7 @@
   <string name="ui_ddbcf0672648">静音</string>
   <string name="ui_28d03596d24e">跳过</string>
   <string name="ui_10ad4c387363">灰色</string>
+  <string name="ui_c3c9dfee84df">小杯咖啡</string>
   <string name="ui_46124e023603">声音</string>
   <string name="ui_849ea0586467">声音和振动</string>
   <string name="ui_ae936b5e8343">提示音：%1$s</string>
@@ -279,10 +283,13 @@
   <string name="ui_c76e6790bc5b">服药</string>
   <string name="ui_44428c9e4170">%1$s 服药</string>
   <string name="ui_d31d487dc59a">今日已记录服药</string>
+  <string name="ui_3afdda2c098f">谢谢！</string>
   <string name="ui_1f8a89989c74">服药时间不能晚于当前时间。</string>
   <string name="ui_ac959e83cab6">已记录过起效时间。</string>
   <string name="ui_dbf40a948045">结束时间应在上一事件之后，且不能晚于当前时间。</string>
   <string name="ui_0c9789f88460">日志可离线使用，无需账户，也不含广告、使用分析或跟踪功能。Medic Logger 不会向 Zerrino 发送您的日志、设备标识符或使用历史，也不会访问 HealthKit、Health Connect、通讯录、位置、相机或麦克风。</string>
+  <string name="ui_4f69a120de9e">付款仍需确认。感谢您的耐心等待！</string>
+  <string name="ui_a3beb4918b8b">无法完成捐赠，请稍后再试。</string>
   <string name="ui_e848b24dab98">此日期范围内没有事件。</string>
   <string name="ui_d6a2d5565cfb">此次记录已经结束。</string>
   <string name="ui_57e6f9bf94db">此次服药记录已不存在。</string>
@@ -299,8 +306,12 @@
   <string name="ui_9ab80672c2b9">将删除此次服药及其相关事件。</string>
   <string name="ui_7e42863e7f6b">服药提醒：%1$s</string>
   <string name="ui_0c0fd31c67d4">提醒时间</string>
+  <string name="ui_1ba6518f248a">捐赠未完成</string>
+  <string name="ui_8ded0b632a4d">捐赠完全自愿，不会解锁任何内容。</string>
+  <string name="ui_26ec2057bfd1">目前无法捐赠。</string>
   <string name="ui_f4b06ef6d3c8">结束日期</string>
   <string name="ui_2b065c7c9ce4">今天</string>
+  <string name="ui_d8b8392e2c54">重试</string>
   <string name="ui_62cbca021268">服药天数须为 1–3650，停药天数须为 0–3650。</string>
   <string name="ui_d6807b3f9a54">使用此颜色</string>
   <string name="ui_dbe7c6a622b1">使用箭头切换服药记录。</string>
@@ -320,6 +331,7 @@
   <string name="ui_81f1f5eca5f2">服药历史记录会保留。</string>
   <string name="ui_71bac4be8746">您的日志</string>
   <string name="ui_1c44e25dbc68">您的记录和设置会加密保存在应用的私有存储空间中，加密密钥由设备保护。Medic Logger 不会上传、自动同步或自动备份您的日志。Zerrino 无法恢复丢失的应用数据。</string>
+  <string name="ui_9c090a68f6b6">非常感谢您的支持。</string>
   <string name="ui_230f0e709e4f">ZIP 压缩包</string>
   <string name="ui_496433502b8d">ZIP · 三种格式</string>
   <string name="ui_e27fe731d0da">例如：10 mg · 1 片</string>

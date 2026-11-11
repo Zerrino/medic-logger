@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
   <string name="ui_4d006c02bfad">%1$d d</string>
-  <string name="ui_a4d4b87a7270">%1$d days ON · %2$d days OFF</string>
   <plurals name="ui_848979eed592">
     <item quantity="one">%1$d dose</item>
     <item quantity="other">%1$d doses</item>
@@ -89,6 +88,7 @@
   <string name="ui_923dd1771c36">Close dose</string>
   <string name="ui_6b040120dbeb">Close without effect?</string>
   <string name="ui_c21ead0614e7">Closed</string>
+  <string name="ui_b1e36075532c">Coffee and croissant</string>
   <string name="ui_23abcd7095c7">Collection and sharing</string>
   <string name="ui_6b73191a0a4b">Color</string>
   <string name="ui_22a970d2e5b1">Completed</string>
@@ -169,6 +169,7 @@
   <string name="ui_5299a97cdeb4">Keep dose</string>
   <string name="ui_10291db37515">Keep records for as long as you choose. Delete doses from Journal, then delete medicines once their doses are removed. Archiving keeps history. Clear app storage on Android or choose Delete App on iOS to remove the local journal; Offload App on iOS retains data. Delete exported files separately.</string>
   <string name="ui_a4fe65264ef7">Language</string>
+  <string name="ui_5d6449e1f83b">Large coffee</string>
   <string name="ui_671f17bd7267">Last dose %1$s ago</string>
   <string name="ui_382ac5f308f7">Last updated</string>
   <string name="ui_4787eaf7c938">Legal</string>
@@ -215,6 +216,7 @@
   <string name="ui_08c9ea69e744">Notifications and shortcuts</string>
   <string name="ui_d5f42aed29ab">Notifications, Live Activities and home-screen shortcuts can display medicine names and status. Control their visibility in Medic Logger and your device settings. Notification permission is used for medication status and reminders; Android alarm access helps deliver reminders at the chosen time.</string>
   <string name="ui_2c9267494638">OFF · Day %1$d of %2$d</string>
+  <string name="ui_565339bc4d33">OK</string>
   <string name="ui_b73d757a91f2">ON · Day %1$d of %2$d</string>
   <string name="ui_e3ad9659cccd">ON/OFF cycle</string>
   <string name="ui_9353ecdd547c">Offer me a coffee</string>
@@ -223,9 +225,10 @@
   <string name="ui_a91120019507">Only medicines without recorded doses can be permanently deleted.</string>
   <string name="ui_5dfe314666d5">Onset</string>
   <string name="ui_c9f6d0ff74eb">Open-source licenses</string>
-  <string name="ui_6d8d011eb9d3">Opening a website gives that site your browser\'s normal connection information. Ko-fi and its payment providers handle optional donations under their own policies. Medic Logger includes no journal data in these links. If you email support, Zerrino receives your email address and message to respond and keeps them only as needed for that request and applicable legal obligations. Include health information only if you choose to share it.</string>
+  <string name="ui_d8d979e34e7f">Opening a website gives that site your browser\'s normal connection information. Optional donations are processed by Google Play on Android, and by Ko-fi and its payment providers on iPhone, under their own policies. Medic Logger includes no journal data in donations or links. If you email support, Zerrino receives your email address and message to respond and keeps them only as needed for that request and applicable legal obligations. Include health information only if you choose to share it.</string>
   <string name="ui_357222bbef4d">Over</string>
   <string name="ui_e7d332d99b95">Pack quantity (optional)</string>
+  <string name="ui_fb2f66ab6029">Payment pending</string>
   <string name="ui_5d09ee50ec65">Personal journal</string>
   <string name="ui_b50bb28b87d4">Please prepare the export again.</string>
   <string name="ui_eea4fb33efd3">Please try again.</string>
@@ -273,6 +276,7 @@
   <string name="ui_ddbcf0672648">Silent</string>
   <string name="ui_28d03596d24e">Skip</string>
   <string name="ui_10ad4c387363">Slate</string>
+  <string name="ui_c3c9dfee84df">Small coffee</string>
   <string name="ui_46124e023603">Sound</string>
   <string name="ui_849ea0586467">Sound and vibration</string>
   <string name="ui_ae936b5e8343">Sound: %1$s</string>
@@ -287,10 +291,13 @@
   <string name="ui_c76e6790bc5b">Taken</string>
   <string name="ui_44428c9e4170">Taken at %1$s</string>
   <string name="ui_d31d487dc59a">Taken today</string>
+  <string name="ui_3afdda2c098f">Thank you!</string>
   <string name="ui_1f8a89989c74">The dose time must be in the past or now.</string>
   <string name="ui_ac959e83cab6">The effects have already been recorded.</string>
   <string name="ui_dbf40a948045">The end time must follow the previous event, and cannot be in the future.</string>
   <string name="ui_0c9789f88460">The journal works offline, without an account, advertising, analytics or tracking. Medic Logger does not send your journal, device identifiers or usage history to Zerrino. It does not access HealthKit, Health Connect, your contacts, location, camera or microphone.</string>
+  <string name="ui_4f69a120de9e">The payment still needs to be confirmed. Thank you for your patience!</string>
+  <string name="ui_a3beb4918b8b">The tip could not be completed. Please try again later.</string>
   <string name="ui_e848b24dab98">There are no events in this period.</string>
   <string name="ui_d6a2d5565cfb">This dose is already closed.</string>
   <string name="ui_57e6f9bf94db">This dose no longer exists.</string>
@@ -307,8 +314,12 @@
   <string name="ui_9ab80672c2b9">This removes the dose and its events.</string>
   <string name="ui_7e42863e7f6b">Time to take %1$s</string>
   <string name="ui_0c0fd31c67d4">Times</string>
+  <string name="ui_1ba6518f248a">Tip not completed</string>
+  <string name="ui_8ded0b632a4d">Tips are optional and unlock nothing.</string>
+  <string name="ui_26ec2057bfd1">Tips are unavailable right now.</string>
   <string name="ui_f4b06ef6d3c8">To</string>
   <string name="ui_2b065c7c9ce4">Today</string>
+  <string name="ui_d8b8392e2c54">Try again</string>
   <string name="ui_62cbca021268">Use 1–3650 ON days and 0–3650 OFF days.</string>
   <string name="ui_d6807b3f9a54">Use color</string>
   <string name="ui_dbe7c6a622b1">Use the arrows to switch doses.</string>
@@ -328,6 +339,7 @@
   <string name="ui_81f1f5eca5f2">Your dose history will be kept.</string>
   <string name="ui_71bac4be8746">Your journal</string>
   <string name="ui_1c44e25dbc68">Your records and settings are encrypted in the app\'s private storage. Encryption keys are protected by your device. Medic Logger does not upload, automatically sync or back up your journal. Zerrino cannot recover lost app data.</string>
+  <string name="ui_9c090a68f6b6">Your support means a lot.</string>
   <string name="ui_230f0e709e4f">ZIP archive</string>
   <string name="ui_496433502b8d">ZIP · all three</string>
   <string name="ui_e27fe731d0da">e.g. 10 mg · 1 tablet</string>

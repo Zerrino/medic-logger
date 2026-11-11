@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
   <string name="ui_4d006c02bfad">%1$d j</string>
-  <string name="ui_a4d4b87a7270">%1$d jours de prise · %2$d jours de pause</string>
   <plurals name="ui_848979eed592">
     <item quantity="one">%1$d prise</item>
     <item quantity="many">%1$d prises</item>
@@ -97,6 +96,7 @@
   <string name="ui_923dd1771c36">Clôturer</string>
   <string name="ui_6b040120dbeb">Clôturer sans effet ?</string>
   <string name="ui_c21ead0614e7">Clôture</string>
+  <string name="ui_b1e36075532c">Café et croissant</string>
   <string name="ui_23abcd7095c7">Collecte et partage</string>
   <string name="ui_6b73191a0a4b">Couleur</string>
   <string name="ui_22a970d2e5b1">Terminées</string>
@@ -177,6 +177,7 @@
   <string name="ui_5299a97cdeb4">Conserver</string>
   <string name="ui_10291db37515">Vous choisissez la durée de conservation des données. Supprimez les prises dans Journal, puis les médicaments une fois leurs prises supprimées. L’archivage conserve l’historique. Pour supprimer le journal local, effacez le stockage de l’application sur Android ou choisissez Supprimer l’app sur iOS ; Décharger l’app sur iOS conserve les données. Supprimez les exports séparément.</string>
   <string name="ui_a4fe65264ef7">Langue</string>
+  <string name="ui_5d6449e1f83b">Grand café</string>
   <string name="ui_671f17bd7267">Dernière prise il y a %1$s</string>
   <string name="ui_382ac5f308f7">Dernière mise à jour</string>
   <string name="ui_4787eaf7c938">Mentions légales</string>
@@ -223,6 +224,7 @@
   <string name="ui_08c9ea69e744">Notifications et raccourcis</string>
   <string name="ui_d5f42aed29ab">Les notifications, les activités en direct et les raccourcis de l’écran d’accueil peuvent afficher les noms et l’état des médicaments. Gérez leur visibilité dans Medic Logger et les réglages de votre appareil. L’autorisation de notification sert aux états et rappels de médicaments ; l’accès aux alarmes sur Android aide à les déclencher à l’heure choisie.</string>
   <string name="ui_2c9267494638">Pause · Jour %1$d sur %2$d</string>
+  <string name="ui_565339bc4d33">OK</string>
   <string name="ui_b73d757a91f2">Prise · Jour %1$d sur %2$d</string>
   <string name="ui_e3ad9659cccd">Cycle de prise/pause</string>
   <string name="ui_9353ecdd547c">M’offrir un café</string>
@@ -231,9 +233,10 @@
   <string name="ui_a91120019507">Seuls les médicaments sans prise enregistrée peuvent être supprimés.</string>
   <string name="ui_5dfe314666d5">Début</string>
   <string name="ui_c9f6d0ff74eb">Licences open source</string>
-  <string name="ui_6d8d011eb9d3">Ouvrir un site lui transmet les informations de connexion habituelles de votre navigateur. Ko-fi et ses prestataires de paiement traitent les dons facultatifs selon leurs propres règles. Medic Logger n’inclut aucune donnée du journal dans ces liens. Si vous écrivez à l’assistance, Zerrino reçoit votre adresse e-mail et votre message pour vous répondre et les conserve uniquement le temps nécessaire à cette demande et aux obligations légales applicables. Ne joignez des données de santé que si vous souhaitez les partager.</string>
+  <string name="ui_d8d979e34e7f">Ouvrir un site lui transmet les informations de connexion habituelles de votre navigateur. Les dons facultatifs sont traités par Google Play sur Android, et par Ko-fi et ses prestataires de paiement sur iPhone, selon leurs propres règles. Medic Logger n’inclut aucune donnée du journal dans les dons ni dans les liens. Si vous écrivez à l’assistance, Zerrino reçoit votre adresse e-mail et votre message pour vous répondre et les conserve uniquement le temps nécessaire à cette demande et aux obligations légales applicables. Ne joignez des données de santé que si vous souhaitez les partager.</string>
   <string name="ui_357222bbef4d">Terminer</string>
   <string name="ui_e7d332d99b95">Quantité dans la boîte (facultatif)</string>
+  <string name="ui_fb2f66ab6029">Paiement en attente</string>
   <string name="ui_5d09ee50ec65">Journal personnel</string>
   <string name="ui_b50bb28b87d4">Veuillez préparer à nouveau l’export.</string>
   <string name="ui_eea4fb33efd3">Veuillez réessayer.</string>
@@ -281,6 +284,7 @@
   <string name="ui_ddbcf0672648">Silencieux</string>
   <string name="ui_28d03596d24e">Passer</string>
   <string name="ui_10ad4c387363">Gris</string>
+  <string name="ui_c3c9dfee84df">Petit café</string>
   <string name="ui_46124e023603">Son</string>
   <string name="ui_849ea0586467">Son et vibration</string>
   <string name="ui_ae936b5e8343">Son : %1$s</string>
@@ -295,10 +299,13 @@
   <string name="ui_c76e6790bc5b">Prise</string>
   <string name="ui_44428c9e4170">Prise à %1$s</string>
   <string name="ui_d31d487dc59a">Prises enregistrées aujourd’hui</string>
+  <string name="ui_3afdda2c098f">Merci !</string>
   <string name="ui_1f8a89989c74">L’heure de prise doit être passée ou actuelle.</string>
   <string name="ui_ac959e83cab6">Les effets ont déjà été enregistrés.</string>
   <string name="ui_dbf40a948045">La fin doit suivre l’événement précédent, sans être dans le futur.</string>
   <string name="ui_0c9789f88460">Le journal fonctionne hors ligne, sans compte, publicité, outil d’analyse ni suivi. Medic Logger n’envoie à Zerrino ni votre journal, ni les identifiants de votre appareil, ni votre historique d’utilisation. L’application n’accède pas à HealthKit, à Health Connect, à vos contacts, à votre position, à votre caméra ni à votre microphone.</string>
+  <string name="ui_4f69a120de9e">Le paiement doit encore être confirmé. Merci de votre patience !</string>
+  <string name="ui_a3beb4918b8b">Le don n’a pas pu être effectué. Réessayez plus tard.</string>
   <string name="ui_e848b24dab98">Aucun événement sur cette période.</string>
   <string name="ui_d6a2d5565cfb">Cette prise est déjà clôturée.</string>
   <string name="ui_57e6f9bf94db">Cette prise n’existe plus.</string>
@@ -315,8 +322,12 @@
   <string name="ui_9ab80672c2b9">La prise et ses événements seront supprimés.</string>
   <string name="ui_7e42863e7f6b">Rappel de prise : %1$s</string>
   <string name="ui_0c0fd31c67d4">Horaires</string>
+  <string name="ui_1ba6518f248a">Don non effectué</string>
+  <string name="ui_8ded0b632a4d">Les dons sont facultatifs et ne débloquent rien.</string>
+  <string name="ui_26ec2057bfd1">Les dons sont indisponibles pour le moment.</string>
   <string name="ui_f4b06ef6d3c8">Au</string>
   <string name="ui_2b065c7c9ce4">Aujourd’hui</string>
+  <string name="ui_d8b8392e2c54">Réessayer</string>
   <string name="ui_62cbca021268">Indiquez 1 à 3650 jours de prise et 0 à 3650 jours de pause.</string>
   <string name="ui_d6807b3f9a54">Utiliser</string>
   <string name="ui_dbe7c6a622b1">Utilisez les flèches pour changer de prise.</string>
@@ -336,6 +347,7 @@
   <string name="ui_81f1f5eca5f2">L’historique des prises sera conservé.</string>
   <string name="ui_71bac4be8746">Votre journal</string>
   <string name="ui_1c44e25dbc68">Vos données et réglages sont chiffrés dans le stockage privé de l’application. Votre appareil protège les clés de chiffrement. Medic Logger ne transmet pas votre journal, ne le synchronise pas et ne le sauvegarde pas automatiquement. Zerrino ne peut pas récupérer les données perdues.</string>
+  <string name="ui_9c090a68f6b6">Votre soutien compte beaucoup.</string>
   <string name="ui_230f0e709e4f">Archive ZIP</string>
   <string name="ui_496433502b8d">ZIP · les trois</string>
   <string name="ui_e27fe731d0da">Ex. : 10 mg · 1 comprimé</string>

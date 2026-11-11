@@ -21,10 +21,11 @@ notices = [
     'LibTomCrypt — SQLCipher Android cryptography provider\nhttps://github.com/libtom/libtomcrypt',
     (licenses / 'LibTomCrypt-Public-Domain.txt').read_text(),
     'AndroidX SQLite 2.7.0 and AndroidX Annotation 1.9.1\nCopyright The Android Open Source Project\nhttps://developer.android.com/jetpack/androidx',
+    'Google Play Billing Library 9.1.0\nCopyright Google LLC\nhttps://developer.android.com/google/play/billing',
     'Kotlin standard library 2.2.10\nhttps://github.com/JetBrains/kotlin',
     (licenses / 'Kotlin-NOTICE.txt').read_text(),
     'JetBrains Java annotations 13.0\nJetBrains s.r.o.\nhttps://github.com/JetBrains/java-annotations',
-    'AndroidX, Kotlin and JetBrains annotations are licensed under the Apache License, Version 2.0:',
+    'AndroidX, Google Play Billing, Kotlin and JetBrains annotations are licensed under the Apache License, Version 2.0:',
     (licenses / 'Apache-2.0.txt').read_text(),
 ]
 notices_text = '\n\n'.join(notices) + '\n'

@@ -1404,11 +1404,6 @@
     "Primeiro dia de toma: %s",
     "首次服药日：%s"
   ],
-  "%d days ON · %d days OFF": [
-    "%d jours de prise · %d jours de pause",
-    "%d dias de toma · %d dias de pausa",
-    "服药 %d 天 · 停药 %d 天"
-  ],
   "ON · Day %d of %d": [
     "Prise · Jour %d sur %d",
     "Toma · Dia %d de %d",
@@ -1549,11 +1544,6 @@
     "Ligações externas e apoio",
     "外部链接与支持"
   ],
-  "Opening a website gives that site your browser's normal connection information. Ko-fi and its payment providers handle optional donations under their own policies. Medic Logger includes no journal data in these links. If you email support, Zerrino receives your email address and message to respond and keeps them only as needed for that request and applicable legal obligations. Include health information only if you choose to share it.": [
-    "Ouvrir un site lui transmet les informations de connexion habituelles de votre navigateur. Ko-fi et ses prestataires de paiement traitent les dons facultatifs selon leurs propres règles. Medic Logger n’inclut aucune donnée du journal dans ces liens. Si vous écrivez à l’assistance, Zerrino reçoit votre adresse e-mail et votre message pour vous répondre et les conserve uniquement le temps nécessaire à cette demande et aux obligations légales applicables. Ne joignez des données de santé que si vous souhaitez les partager.",
-    "Ao abrir um site, este recebe as informações normais de ligação do seu navegador. O Ko-fi e os seus prestadores de pagamento tratam os donativos opcionais segundo as suas próprias políticas. O Medic Logger não inclui dados do diário nestas ligações. Se contactar o apoio por e-mail, Zerrino recebe o seu endereço e mensagem para responder e conserva-os apenas durante o tempo necessário para esse pedido e obrigações legais aplicáveis. Inclua informações de saúde apenas se optar por as partilhar.",
-    "打开网站时，该网站会接收浏览器正常连接所需的信息。Ko-fi 及其支付服务商依据各自的政策处理自愿捐赠。Medic Logger 不会在这些链接中包含日志数据。如果您通过电子邮件联系支持，Zerrino 会接收您的邮箱地址和消息以作回复，并仅在处理该请求及履行适用法律义务所需的期间保留这些信息。只有在您自愿分享时才请提供健康信息。"
-  ],
   "Policy updates": [
     "Mises à jour de la politique",
     "Atualizações da política",
@@ -1593,5 +1583,75 @@
     "Les rappels peuvent être retardés ou ne pas apparaître en raison des réglages de l’appareil, des limites de batterie ou des restrictions du système. Prévoyez un autre moyen de respecter les horaires prescrits. En cas d’urgence, contactez les services d’urgence locaux.",
     "Os lembretes podem atrasar-se ou não ser apresentados devido a definições do dispositivo, limites de bateria ou restrições do sistema. Mantenha outra forma de seguir o horário prescrito. Em caso de emergência, contacte os serviços de emergência locais.",
     "设备设置、电池限制或系统限制可能导致提醒延迟或遗漏。请另备方式帮助您遵守医嘱规定的时间。如遇紧急情况，请联系当地急救服务。"
+  ],
+  "Opening a website gives that site your browser's normal connection information. Optional donations are processed by Google Play on Android, and by Ko-fi and its payment providers on iPhone, under their own policies. Medic Logger includes no journal data in donations or links. If you email support, Zerrino receives your email address and message to respond and keeps them only as needed for that request and applicable legal obligations. Include health information only if you choose to share it.": [
+    "Ouvrir un site lui transmet les informations de connexion habituelles de votre navigateur. Les dons facultatifs sont traités par Google Play sur Android, et par Ko-fi et ses prestataires de paiement sur iPhone, selon leurs propres règles. Medic Logger n’inclut aucune donnée du journal dans les dons ni dans les liens. Si vous écrivez à l’assistance, Zerrino reçoit votre adresse e-mail et votre message pour vous répondre et les conserve uniquement le temps nécessaire à cette demande et aux obligations légales applicables. Ne joignez des données de santé que si vous souhaitez les partager.",
+    "Ao abrir um site, este recebe as informações normais de ligação do seu navegador. Os donativos opcionais são processados pelo Google Play no Android, e pelo Ko-fi e os seus prestadores de pagamento no iPhone, segundo as suas próprias políticas. O Medic Logger não inclui dados do diário nos donativos nem nas ligações. Se contactar o apoio por e-mail, Zerrino recebe o seu endereço e mensagem para responder e conserva-os apenas durante o tempo necessário para esse pedido e obrigações legais aplicáveis. Inclua informações de saúde apenas se optar por as partilhar.",
+    "打开网站时，该网站会接收浏览器正常连接所需的信息。自愿捐赠在 Android 上由 Google Play 处理，在 iPhone 上由 Ko-fi 及其支付服务商处理，均依据各自的政策。Medic Logger 不会在捐赠或链接中包含日志数据。如果您通过电子邮件联系支持，Zerrino 会接收您的邮箱地址和消息以作回复，并仅在处理该请求及履行适用法律义务所需的期间保留这些信息。只有在您自愿分享时才请提供健康信息。"
+  ],
+  "Small coffee": [
+    "Petit café",
+    "Café pequeno",
+    "小杯咖啡"
+  ],
+  "Large coffee": [
+    "Grand café",
+    "Café grande",
+    "大杯咖啡"
+  ],
+  "Coffee and croissant": [
+    "Café et croissant",
+    "Café e croissant",
+    "咖啡和可颂"
+  ],
+  "Tips are optional and unlock nothing.": [
+    "Les dons sont facultatifs et ne débloquent rien.",
+    "As doações são opcionais e não desbloqueiam nada.",
+    "捐赠完全自愿，不会解锁任何内容。"
+  ],
+  "Tips are unavailable right now.": [
+    "Les dons sont indisponibles pour le moment.",
+    "As doações não estão disponíveis de momento.",
+    "目前无法捐赠。"
+  ],
+  "Try again": [
+    "Réessayer",
+    "Tentar novamente",
+    "重试"
+  ],
+  "Thank you!": [
+    "Merci !",
+    "Obrigado!",
+    "谢谢！"
+  ],
+  "Your support means a lot.": [
+    "Votre soutien compte beaucoup.",
+    "O seu apoio significa muito.",
+    "非常感谢您的支持。"
+  ],
+  "Payment pending": [
+    "Paiement en attente",
+    "Pagamento pendente",
+    "付款待处理"
+  ],
+  "The payment still needs to be confirmed. Thank you for your patience!": [
+    "Le paiement doit encore être confirmé. Merci de votre patience !",
+    "O pagamento ainda tem de ser confirmado. Obrigado pela sua paciência!",
+    "付款仍需确认。感谢您的耐心等待！"
+  ],
+  "Tip not completed": [
+    "Don non effectué",
+    "Doação não concluída",
+    "捐赠未完成"
+  ],
+  "The tip could not be completed. Please try again later.": [
+    "Le don n’a pas pu être effectué. Réessayez plus tard.",
+    "Não foi possível concluir a doação. Tente novamente mais tarde.",
+    "无法完成捐赠，请稍后再试。"
+  ],
+  "OK": [
+    "OK",
+    "OK",
+    "好"
   ]
 }

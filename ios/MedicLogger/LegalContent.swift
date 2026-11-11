@@ -7,7 +7,7 @@ enum LegalContent {
     }
     static let publisher = "Zerrino"
     static let email = "afds999@gmail.com"
-    static let updated = "2026-11-05"
+    static let updated = "2026-11-11"
     static let privacyURL: String? = nil
     static let privacy: [Section] = [
         Section(title: "Your journal", body: "Medic Logger uses the information you enter to keep your medication journal, track stock and show reminders: medicine names, short names, doses, intake and effect times, personal ratings, notes, refills, schedules and app settings."),
@@ -16,7 +16,7 @@ enum LegalContent {
         Section(title: "Notifications and shortcuts", body: "Notifications, Live Activities and home-screen shortcuts can display medicine names and status. Control their visibility in Medic Logger and your device settings. Notification permission is used for medication status and reminders; Android alarm access helps deliver reminders at the chosen time."),
         Section(title: "Exports", body: "Exports are not encrypted, including ZIP files. You choose where to save or share them. A cloud provider or recipient you select handles that copy under its own policies. Protect exported files that contain health information."),
         Section(title: "Retention and deletion", body: "Keep records for as long as you choose. Delete doses from Journal, then delete medicines once their doses are removed. Archiving keeps history. Clear app storage on Android or choose Delete App on iOS to remove the local journal; Offload App on iOS retains data. Delete exported files separately."),
-        Section(title: "External links and support", body: "Opening a website gives that site your browser's normal connection information. Ko-fi and its payment providers handle optional donations under their own policies. Medic Logger includes no journal data in these links. If you email support, Zerrino receives your email address and message to respond and keeps them only as needed for that request and applicable legal obligations. Include health information only if you choose to share it."),
+        Section(title: "External links and support", body: "Opening a website gives that site your browser's normal connection information. Optional donations are processed by Google Play on Android, and by Ko-fi and its payment providers on iPhone, under their own policies. Medic Logger includes no journal data in donations or links. If you email support, Zerrino receives your email address and message to respond and keeps them only as needed for that request and applicable legal obligations. Include health information only if you choose to share it."),
         Section(title: "Policy updates", body: "Changes to data handling will be reflected in the policy included with the app and its public version. The date below identifies this version. Contact Zerrino with privacy questions."),
     ]
     static let medical: [Section] = [

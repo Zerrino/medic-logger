@@ -10,7 +10,6 @@ public final class I18n {
     private static final Map<Integer,Integer> QUANTITIES=new HashMap<>();
     static {
         IDS.put("%d d",R.string.ui_4d006c02bfad);
-        IDS.put("%d days ON · %d days OFF",R.string.ui_a4d4b87a7270);
         IDS.put("%d doses",R.plurals.ui_848979eed592);
         QUANTITIES.put(R.plurals.ui_848979eed592,0);
         IDS.put("%d doses are already active for this medicine. Log a separate dose?",R.plurals.ui_1de51aa8945f);
@@ -82,6 +81,7 @@ public final class I18n {
         IDS.put("Close dose",R.string.ui_923dd1771c36);
         IDS.put("Close without effect?",R.string.ui_6b040120dbeb);
         IDS.put("Closed",R.string.ui_c21ead0614e7);
+        IDS.put("Coffee and croissant",R.string.ui_b1e36075532c);
         IDS.put("Collection and sharing",R.string.ui_23abcd7095c7);
         IDS.put("Color",R.string.ui_6b73191a0a4b);
         IDS.put("Completed",R.string.ui_22a970d2e5b1);
@@ -162,6 +162,7 @@ public final class I18n {
         IDS.put("Keep dose",R.string.ui_5299a97cdeb4);
         IDS.put("Keep records for as long as you choose. Delete doses from Journal, then delete medicines once their doses are removed. Archiving keeps history. Clear app storage on Android or choose Delete App on iOS to remove the local journal; Offload App on iOS retains data. Delete exported files separately.",R.string.ui_10291db37515);
         IDS.put("Language",R.string.ui_a4fe65264ef7);
+        IDS.put("Large coffee",R.string.ui_5d6449e1f83b);
         IDS.put("Last dose %s ago",R.string.ui_671f17bd7267);
         IDS.put("Last updated",R.string.ui_382ac5f308f7);
         IDS.put("Legal",R.string.ui_4787eaf7c938);
@@ -208,6 +209,7 @@ public final class I18n {
         IDS.put("Notifications and shortcuts",R.string.ui_08c9ea69e744);
         IDS.put("Notifications, Live Activities and home-screen shortcuts can display medicine names and status. Control their visibility in Medic Logger and your device settings. Notification permission is used for medication status and reminders; Android alarm access helps deliver reminders at the chosen time.",R.string.ui_d5f42aed29ab);
         IDS.put("OFF · Day %d of %d",R.string.ui_2c9267494638);
+        IDS.put("OK",R.string.ui_565339bc4d33);
         IDS.put("ON · Day %d of %d",R.string.ui_b73d757a91f2);
         IDS.put("ON/OFF cycle",R.string.ui_e3ad9659cccd);
         IDS.put("Offer me a coffee",R.string.ui_9353ecdd547c);
@@ -216,9 +218,10 @@ public final class I18n {
         IDS.put("Only medicines without recorded doses can be permanently deleted.",R.string.ui_a91120019507);
         IDS.put("Onset",R.string.ui_5dfe314666d5);
         IDS.put("Open-source licenses",R.string.ui_c9f6d0ff74eb);
-        IDS.put("Opening a website gives that site your browser's normal connection information. Ko-fi and its payment providers handle optional donations under their own policies. Medic Logger includes no journal data in these links. If you email support, Zerrino receives your email address and message to respond and keeps them only as needed for that request and applicable legal obligations. Include health information only if you choose to share it.",R.string.ui_6d8d011eb9d3);
+        IDS.put("Opening a website gives that site your browser's normal connection information. Optional donations are processed by Google Play on Android, and by Ko-fi and its payment providers on iPhone, under their own policies. Medic Logger includes no journal data in donations or links. If you email support, Zerrino receives your email address and message to respond and keeps them only as needed for that request and applicable legal obligations. Include health information only if you choose to share it.",R.string.ui_d8d979e34e7f);
         IDS.put("Over",R.string.ui_357222bbef4d);
         IDS.put("Pack quantity (optional)",R.string.ui_e7d332d99b95);
+        IDS.put("Payment pending",R.string.ui_fb2f66ab6029);
         IDS.put("Personal journal",R.string.ui_5d09ee50ec65);
         IDS.put("Please prepare the export again.",R.string.ui_b50bb28b87d4);
         IDS.put("Please try again.",R.string.ui_eea4fb33efd3);
@@ -266,6 +269,7 @@ public final class I18n {
         IDS.put("Silent",R.string.ui_ddbcf0672648);
         IDS.put("Skip",R.string.ui_28d03596d24e);
         IDS.put("Slate",R.string.ui_10ad4c387363);
+        IDS.put("Small coffee",R.string.ui_c3c9dfee84df);
         IDS.put("Sound",R.string.ui_46124e023603);
         IDS.put("Sound and vibration",R.string.ui_849ea0586467);
         IDS.put("Sound: %s",R.string.ui_ae936b5e8343);
@@ -280,10 +284,13 @@ public final class I18n {
         IDS.put("Taken",R.string.ui_c76e6790bc5b);
         IDS.put("Taken at %s",R.string.ui_44428c9e4170);
         IDS.put("Taken today",R.string.ui_d31d487dc59a);
+        IDS.put("Thank you!",R.string.ui_3afdda2c098f);
         IDS.put("The dose time must be in the past or now.",R.string.ui_1f8a89989c74);
         IDS.put("The effects have already been recorded.",R.string.ui_ac959e83cab6);
         IDS.put("The end time must follow the previous event, and cannot be in the future.",R.string.ui_dbf40a948045);
         IDS.put("The journal works offline, without an account, advertising, analytics or tracking. Medic Logger does not send your journal, device identifiers or usage history to Zerrino. It does not access HealthKit, Health Connect, your contacts, location, camera or microphone.",R.string.ui_0c9789f88460);
+        IDS.put("The payment still needs to be confirmed. Thank you for your patience!",R.string.ui_4f69a120de9e);
+        IDS.put("The tip could not be completed. Please try again later.",R.string.ui_a3beb4918b8b);
         IDS.put("There are no events in this period.",R.string.ui_e848b24dab98);
         IDS.put("This dose is already closed.",R.string.ui_d6a2d5565cfb);
         IDS.put("This dose no longer exists.",R.string.ui_57e6f9bf94db);
@@ -300,8 +307,12 @@ public final class I18n {
         IDS.put("This removes the dose and its events.",R.string.ui_9ab80672c2b9);
         IDS.put("Time to take %s",R.string.ui_7e42863e7f6b);
         IDS.put("Times",R.string.ui_0c0fd31c67d4);
+        IDS.put("Tip not completed",R.string.ui_1ba6518f248a);
+        IDS.put("Tips are optional and unlock nothing.",R.string.ui_8ded0b632a4d);
+        IDS.put("Tips are unavailable right now.",R.string.ui_26ec2057bfd1);
         IDS.put("To",R.string.ui_f4b06ef6d3c8);
         IDS.put("Today",R.string.ui_2b065c7c9ce4);
+        IDS.put("Try again",R.string.ui_d8b8392e2c54);
         IDS.put("Use 1–3650 ON days and 0–3650 OFF days.",R.string.ui_62cbca021268);
         IDS.put("Use color",R.string.ui_d6807b3f9a54);
         IDS.put("Use the arrows to switch doses.",R.string.ui_dbe7c6a622b1);
@@ -321,6 +332,7 @@ public final class I18n {
         IDS.put("Your dose history will be kept.",R.string.ui_81f1f5eca5f2);
         IDS.put("Your journal",R.string.ui_71bac4be8746);
         IDS.put("Your records and settings are encrypted in the app's private storage. Encryption keys are protected by your device. Medic Logger does not upload, automatically sync or back up your journal. Zerrino cannot recover lost app data.",R.string.ui_1c44e25dbc68);
+        IDS.put("Your support means a lot.",R.string.ui_9c090a68f6b6);
         IDS.put("ZIP archive",R.string.ui_230f0e709e4f);
         IDS.put("ZIP · all three",R.string.ui_496433502b8d);
         IDS.put("e.g. 10 mg · 1 tablet",R.string.ui_e27fe731d0da);
