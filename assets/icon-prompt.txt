@@ -1,0 +1,9 @@
+Generated with the built-in imagegen tool for Medic Logger.
+
+Final red/white edit prompt (reference: medic-logger-icon-source.png; result: medic-logger-icon-red-source.png):
+
+Edit this existing Medic Logger Android app icon. Change ONLY its color palette to medical red and white. Preserve the exact capsule, clock hands, placement, silhouette, proportions, lighting, soft depth and square full-bleed composition. Replace the entire teal/green background with restrained warm medical red #B63840. Replace the mint half of the capsule with a very light soft rose pink. Keep the other capsule half white. Make the clock hands deep red #9B2933. Remove all green and teal hues. No added objects, no text, no new border. The icon should remain polished, minimal and clearly legible when small.
+
+Original generation prompt:
+
+Use case: logo-brand. Asset type: Android launcher icon for an offline medication journal called Medic Logger. Create a single beautiful minimal icon. Square canvas with solid deep emerald teal background #187B68 extending completely to all edges, no rounded outer border because Android will mask it. Centered simple bold white capsule/pill at a 45 degree diagonal, one half soft mint, with a tiny tasteful clock hand detail suggesting logging the time. Modern flat geometric style with subtle polished depth, extremely clear silhouette legible at 48 pixels. Keep the entire symbol within the central 60 percent of the square for Android adaptive icon masking. No text, no letters, no numbers, no watermarks, no medical red cross, no mockup, no multiple variants. Output a single square image.

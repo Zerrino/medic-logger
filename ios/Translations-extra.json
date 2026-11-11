@@ -1,0 +1,21 @@
+{
+  "Add medicine": ["Ajouter un médicament", "Adicionar medicamento", "添加药物"],
+  "Track stock": ["Suivre le stock", "Controlar o stock", "跟踪库存"],
+  "Time": ["Heure", "Hora", "时间"],
+  "Done": ["Terminé", "Concluído", "完成"],
+  "Gentle": ["Douce", "Suave", "轻柔"],
+  "Chime": ["Carillon", "Sino", "铃声"],
+  "Excel (.xlsx)": ["Excel (.xlsx)", "Excel (.xlsx)", "Excel (.xlsx)"],
+  "Could not save app data.": ["Impossible d’enregistrer les données.", "Não foi possível guardar os dados.", "无法保存应用数据。"],
+  "Encrypted storage could not be opened. Existing data was kept.": ["Impossible d’ouvrir le stockage chiffré. Les données existantes ont été conservées.", "Não foi possível abrir o armazenamento encriptado. Os dados existentes foram mantidos.", "无法打开加密存储。现有数据已保留。"],
+  "Could not create an encryption key.": ["Impossible de créer une clé de chiffrement.", "Não foi possível criar uma chave de encriptação.", "无法创建加密密钥。"],
+  "Could not encrypt app data.": ["Impossible de chiffrer les données.", "Não foi possível encriptar os dados.", "无法加密应用数据。"],
+  "Could not save the encryption key.": ["Impossible d’enregistrer la clé de chiffrement.", "Não foi possível guardar a chave de encriptação.", "无法保存加密密钥。"],
+  "This data version is not supported.": ["Cette version des données n’est pas prise en charge.", "Esta versão dos dados não é suportada.", "不支持此数据版本。"],
+  "The export is too large. Choose a shorter date range.": ["L’export est trop volumineux. Choisis une période plus courte.", "A exportação é demasiado grande. Escolhe um período mais curto.", "导出文件过大。请选择较短的日期范围。"],
+  "Live Activities show monitored doses on the Lock Screen and Dynamic Island. iOS controls their duration and availability.": ["Les activités en direct affichent les prises suivies sur l’écran verrouillé et la Dynamic Island. iOS gère leur durée et leur disponibilité.", "As Atividades em direto mostram as tomas monitorizadas no ecrã bloqueado e na Dynamic Island. O iOS controla a duração e disponibilidade.", "实时活动会在锁定屏幕和灵动岛上显示正在跟踪的服药记录。其持续时间和可用性由 iOS 控制。"],
+  "Vibration, volume, Focus and notification previews follow your iPhone settings.": ["La vibration, le volume, les modes de concentration et les aperçus suivent les réglages de l’iPhone.", "A vibração, o volume, os modos de concentração e as pré-visualizações seguem as definições do iPhone.", "振动、音量、专注模式和通知预览遵循 iPhone 设置。"],
+  "Cycle reminders scheduled through %s": ["Rappels cycliques programmés jusqu’au %s", "Lembretes de ciclo agendados até %s", "周期提醒已安排至 %s"],
+  "Open Medic Logger regularly to extend cycle reminders. iOS limits pending notifications; background refresh is not guaranteed.": ["Ouvre régulièrement Medic Logger pour prolonger les rappels cycliques. iOS limite les notifications programmées ; l’actualisation en arrière-plan n’est pas garantie.", "Abre o Medic Logger regularmente para prolongar os lembretes de ciclo. O iOS limita as notificações agendadas; a atualização em segundo plano não é garantida.", "请定期打开 Medic Logger 以延长周期提醒。iOS 限制待发送通知的数量，且不保证后台刷新。"],
+  "iPhone notification settings": ["Réglages des notifications iPhone", "Definições de notificações do iPhone", "iPhone 通知设置"]
+}

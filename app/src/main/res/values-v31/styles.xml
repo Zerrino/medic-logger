@@ -1,0 +1,8 @@
+<resources>
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="android:windowSplashScreenBackground">#FFFFFF</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+</resources>

@@ -1,0 +1,65 @@
+plugins { id 'com.android.application' }
+
+def localSigning = new Properties()
+def localSigningFile = rootProject.file('.signing/signing.properties')
+if (localSigningFile.exists()) localSigningFile.withInputStream { localSigning.load(it) }
+
+android {
+    namespace 'fr.mediclogger.app'
+    compileSdk 36
+    defaultConfig {
+        applicationId 'fr.mediclogger.app'
+        minSdk 26
+        targetSdk 36
+        versionCode 8
+        versionName '1.4.2'
+        testInstrumentationRunner project.findProperty('deviceTestRunner') ?: 'fr.mediclogger.app.LocalTestRunner'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    signingConfigs {
+        // Local key; for Play, enrol it as the *upload* key (Play App Signing holds the distribution key).
+        release {
+            if (!localSigning.isEmpty()) {
+                storeFile rootProject.file('.signing/medic-logger.jks')
+                storePassword localSigning.getProperty('storePassword')
+                keyAlias 'medic-logger'
+                keyPassword localSigning.getProperty('keyPassword')
+            }
+        }
+        debug {
+            if (!localSigning.isEmpty()) {
+                storeFile rootProject.file('.signing/medic-logger.jks')
+                storePassword localSigning.getProperty('storePassword')
+                keyAlias 'medic-logger'
+                keyPassword localSigning.getProperty('keyPassword')
+            }
+        }
+    }
+    buildTypes {
+        qa {
+            initWith debug
+            applicationIdSuffix '.qa'
+            versionNameSuffix '-qa'
+            resValue 'string', 'app_name', 'Medic Logger QA'
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            // A dedicated local key is created with scripts/create-signing-key.py.
+            // Same key as debug/qa so installing a release over a test build preserves data.
+            signingConfig signingConfigs.release
+        }
+    }
+    testBuildType project.findProperty('deviceTestVariant') ?: 'qa'
+    lint { abortOnError true }
+    bundle { language { enableSplit = false } }
+}
+
+dependencies {
+    implementation 'net.zetetic:sqlcipher-android:4.20.0'
+    implementation 'androidx.sqlite:sqlite:2.7.0'
+}

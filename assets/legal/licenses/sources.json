@@ -1,0 +1,9 @@
+{
+  "SQLCipher-Android-BSD.txt": "https://raw.githubusercontent.com/sqlcipher/sqlcipher-android/master/LICENSE",
+  "SQLCipher-Community-BSD.txt": "https://www.zetetic.net/sqlcipher/license/SQLCIPHER_COMMUNITY_EDITION_LICENSE.txt",
+  "LibTomCrypt-Public-Domain.txt": "https://raw.githubusercontent.com/libtom/libtomcrypt/develop/LICENSE",
+  "Kotlin-NOTICE.txt": "https://raw.githubusercontent.com/JetBrains/kotlin/v2.2.10/license/NOTICE.txt",
+  "Apache-2.0.txt": "Resolved androidx.sqlite:sqlite-android:2.7.0 AAR, META-INF/androidx/sqlite/sqlite/LICENSE.txt",
+  "dependencies": ".tools/legal-android-runtime-dependencies.txt",
+  "crypto_provider": "https://github.com/sqlcipher/sqlcipher-android#using-openssl (default LibTomCrypt; no OpenSSL distribution claimed)"
+}

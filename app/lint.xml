@@ -1,0 +1,6 @@
+<lint>
+    <!-- Full-bleed artwork is intentionally masked by the Android adaptive icon. -->
+    <issue id="IconLauncherShape">
+        <ignore path="src/main/res/drawable-nodpi/ic_launcher_art.png" />
+    </issue>
+</lint>

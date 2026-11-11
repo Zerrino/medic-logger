@@ -1,0 +1,28 @@
+<resources>
+    <style name="AppTheme" parent="AppTheme.Base" />
+    <style name="AppTheme.Base" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#B63840</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">#FFFFFF</item>
+        <item name="android:navigationBarColor">#FFFFFF</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowBackground">#FFFFFF</item>
+        <item name="android:alertDialogTheme">@style/MedicDialog</item>
+    </style>
+    <style name="MedicDialog" parent="android:style/Theme.Material.Light.Dialog.Alert">
+        <item name="android:colorAccent">#B63840</item>
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+        <item name="android:windowMinWidthMajor">92%</item>
+        <item name="android:windowMinWidthMinor">92%</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/DialogButton</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/DialogButton</item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/DialogButton</item>
+    </style>
+    <style name="DialogButton" parent="android:style/Widget.Material.Button.Borderless">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#B63840</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+</resources>

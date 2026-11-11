@@ -1,0 +1,1597 @@
+{
+  "Today": [
+    "Aujourd’hui",
+    "Hoje",
+    "今天"
+  ],
+  "Journal": [
+    "Journal",
+    "Histórico",
+    "记录"
+  ],
+  "Medicines": [
+    "Médicaments",
+    "Medicamentos",
+    "药物"
+  ],
+  "Export": [
+    "Exporter",
+    "Exportar",
+    "导出"
+  ],
+  "Calendar": [
+    "Calendrier",
+    "Calendário",
+    "日历"
+  ],
+  "Settings": [
+    "Réglages",
+    "Definições",
+    "设置"
+  ],
+  "Doses today": [
+    "Prises du jour",
+    "Tomas de hoje",
+    "今日服药"
+  ],
+  "Active": [
+    "Activer",
+    "Ativar",
+    "生效"
+  ],
+  "Ongoing": [
+    "En cours",
+    "Em curso",
+    "进行中"
+  ],
+  "Over": [
+    "Terminer",
+    "Terminar",
+    "结束"
+  ],
+  "Quick log": [
+    "Prise rapide",
+    "Registo rápido",
+    "快速记录"
+  ],
+  "Manage": [
+    "Gérer",
+    "Gerir",
+    "管理"
+  ],
+  "+  Add medicine": [
+    "+  Ajouter un médicament",
+    "+  Adicionar medicamento",
+    "+  添加药物"
+  ],
+  "Choose shortcuts": [
+    "Choisir les raccourcis",
+    "Escolher atalhos",
+    "选择快捷方式"
+  ],
+  "Log dose": [
+    "Enregistrer la prise",
+    "Registar toma",
+    "记录服药"
+  ],
+  "Active doses": [
+    "Prises en cours",
+    "Tomas em curso",
+    "正在进行的服药"
+  ],
+  "No active doses": [
+    "Aucune prise en cours",
+    "Sem tomas em curso",
+    "暂无进行中的服药"
+  ],
+  "Effects active": [
+    "Effets en cours",
+    "Efeitos ativos",
+    "药效持续中"
+  ],
+  "Waiting": [
+    "En attente",
+    "Em espera",
+    "等待起效"
+  ],
+  "Completed": [
+    "Terminées",
+    "Concluídas",
+    "已结束"
+  ],
+  "No effect": [
+    "Sans effet",
+    "Sem efeito",
+    "未观察到药效"
+  ],
+  "Effects started": [
+    "Début des effets",
+    "Início dos efeitos",
+    "记录起效"
+  ],
+  "Effects ended": [
+    "Fin des effets",
+    "Fim dos efeitos",
+    "记录药效结束"
+  ],
+  "Taken": [
+    "Prise",
+    "Toma",
+    "服药"
+  ],
+  "Onset": [
+    "Début",
+    "Início",
+    "起效"
+  ],
+  "End": [
+    "Fin",
+    "Fim",
+    "结束"
+  ],
+  "Ended": [
+    "Fin",
+    "Fim",
+    "结束"
+  ],
+  "Closed": [
+    "Clôture",
+    "Fecho",
+    "已关闭"
+  ],
+  "Close without effect?": [
+    "Clôturer sans effet ?",
+    "Fechar sem efeito?",
+    "结束此次记录，未观察到药效？"
+  ],
+  "Close dose": [
+    "Clôturer",
+    "Fechar toma",
+    "结束记录"
+  ],
+  "Cancel": [
+    "Annuler",
+    "Cancelar",
+    "取消"
+  ],
+  "All": [
+    "Tout",
+    "Tudo",
+    "全部"
+  ],
+  "Search medicines or notes": [
+    "Rechercher un médicament ou une note",
+    "Pesquisar medicamentos ou notas",
+    "搜索药物或备注"
+  ],
+  "No doses found": [
+    "Aucune prise trouvée",
+    "Nenhuma toma encontrada",
+    "未找到服药记录"
+  ],
+  "Show more (%d)": [
+    "Afficher la suite (%d)",
+    "Mostrar mais (%d)",
+    "显示更多（%d）"
+  ],
+  "%d saved medicines": [
+    "%d médicaments enregistrés",
+    "%d medicamentos guardados",
+    "已保存 %d 种药物"
+  ],
+  "Hide archived": [
+    "Masquer les archives",
+    "Ocultar arquivados",
+    "隐藏已归档药物"
+  ],
+  "Show archived": [
+    "Voir les archives",
+    "Mostrar arquivados",
+    "显示已归档药物"
+  ],
+  "No medicines saved": [
+    "Aucun médicament enregistré",
+    "Sem medicamentos guardados",
+    "尚未保存药物"
+  ],
+  "Restore": [
+    "Restaurer",
+    "Restaurar",
+    "恢复"
+  ],
+  "Edit medicine": [
+    "Modifier",
+    "Editar medicamento",
+    "编辑药物"
+  ],
+  "Home shortcut": [
+    "Raccourci écran",
+    "Atalho no ecrã",
+    "桌面快捷方式"
+  ],
+  "Delete": [
+    "Supprimer",
+    "Eliminar",
+    "删除"
+  ],
+  "Delete %s?": [
+    "Supprimer %s ?",
+    "Eliminar %s?",
+    "删除 %s？"
+  ],
+  "Only medicines without recorded doses can be permanently deleted.": [
+    "Seuls les médicaments sans prise enregistrée peuvent être supprimés.",
+    "Só é possível eliminar medicamentos sem tomas registadas.",
+    "只能永久删除没有服药记录的药物。"
+  ],
+  "Delete medicine": [
+    "Supprimer le médicament",
+    "Eliminar medicamento",
+    "删除药物"
+  ],
+  "Archived": [
+    "Archivé",
+    "Arquivado",
+    "已归档"
+  ],
+  "Date range": [
+    "Période",
+    "Período",
+    "日期范围"
+  ],
+  "From": [
+    "Du",
+    "De",
+    "开始日期"
+  ],
+  "To": [
+    "Au",
+    "Até",
+    "结束日期"
+  ],
+  "7 days": [
+    "7 jours",
+    "7 dias",
+    "7 天"
+  ],
+  "30 days": [
+    "30 jours",
+    "30 dias",
+    "30 天"
+  ],
+  "All time": [
+    "Tout",
+    "Tudo",
+    "全部时间"
+  ],
+  "All medicines": [
+    "Tous les médicaments",
+    "Todos os medicamentos",
+    "所有药物"
+  ],
+  "inclusive dates": [
+    "dates incluses",
+    "datas incluídas",
+    "包含起止日期"
+  ],
+  "Format": [
+    "Format",
+    "Formato",
+    "格式"
+  ],
+  "All formats": [
+    "Tous les formats",
+    "Todos os formatos",
+    "所有格式"
+  ],
+  "ZIP · all three": [
+    "ZIP · les trois",
+    "ZIP · os três",
+    "ZIP · 三种格式"
+  ],
+  "ZIP archive": [
+    "Archive ZIP",
+    "Ficheiro ZIP",
+    "ZIP 压缩包"
+  ],
+  "%d events selected": [
+    "%d événements sélectionnés",
+    "%d eventos selecionados",
+    "已选择 %d 条事件"
+  ],
+  "End date must be on or after start date.": [
+    "La date de fin doit suivre la date de début.",
+    "A data final deve ser igual ou posterior à inicial.",
+    "结束日期不能早于开始日期。"
+  ],
+  "Preparing…": [
+    "Préparation…",
+    "A preparar…",
+    "正在准备…"
+  ],
+  "Save export": [
+    "Enregistrer l’export",
+    "Guardar exportação",
+    "保存导出文件"
+  ],
+  "Filter medicines": [
+    "Filtrer les médicaments",
+    "Filtrar medicamentos",
+    "筛选药物"
+  ],
+  "%s (archived)": [
+    "%s (archivé)",
+    "%s (arquivado)",
+    "%s（已归档）"
+  ],
+  "Log a dose of %s?": [
+    "Enregistrer une prise de %s ?",
+    "Registar uma toma de %s?",
+    "记录服用 %s？"
+  ],
+  "Another dose of %s?": [
+    "Une autre prise de %s ?",
+    "Outra toma de %s?",
+    "再次记录服用 %s？"
+  ],
+  "%d doses are already active for this medicine. Log a separate dose?": [
+    "%d prises sont déjà en cours pour ce médicament. Enregistrer une nouvelle prise ?",
+    "Já existem %d tomas em curso deste medicamento. Registar outra toma?",
+    "此药物已有 %d 次服药正在进行中。是否另记一次？"
+  ],
+  "Log another dose": [
+    "Ajouter une prise",
+    "Registar outra toma",
+    "另记一次服药"
+  ],
+  "Dose logged": [
+    "Prise enregistrée",
+    "Toma registada",
+    "已记录服药"
+  ],
+  "Effect onset recorded": [
+    "Début des effets enregistré",
+    "Início dos efeitos registado",
+    "已记录起效"
+  ],
+  "Dose closed": [
+    "Prise clôturée",
+    "Toma fechada",
+    "此次记录已结束"
+  ],
+  "Add a medicine": [
+    "Ajouter un médicament",
+    "Adicionar medicamento",
+    "添加药物"
+  ],
+  "Medicine name *": [
+    "Nom du médicament *",
+    "Nome do medicamento *",
+    "药物名称 *"
+  ],
+  "e.g. My medicine": [
+    "Nom du médicament",
+    "Nome do medicamento",
+    "输入药物名称"
+  ],
+  "Short name": [
+    "Nom court",
+    "Nome curto",
+    "简称"
+  ],
+  "e.g. Morning": [
+    "Ex. : Matin",
+    "Ex.: Manhã",
+    "例如：早晨"
+  ],
+  "Dose label (optional)": [
+    "Dosage (facultatif)",
+    "Dose (opcional)",
+    "剂量说明（可选）"
+  ],
+  "e.g. 10 mg · 1 tablet": [
+    "Ex. : 10 mg · 1 comprimé",
+    "Ex.: 10 mg · 1 comprimido",
+    "例如：10 mg · 1 片"
+  ],
+  "Color": [
+    "Couleur",
+    "Cor",
+    "颜色"
+  ],
+  "Red": [
+    "Rouge",
+    "Vermelho",
+    "红色"
+  ],
+  "Blue": [
+    "Bleu",
+    "Azul",
+    "蓝色"
+  ],
+  "Amber": [
+    "Ambre",
+    "Âmbar",
+    "琥珀色"
+  ],
+  "Purple": [
+    "Violet",
+    "Roxo",
+    "紫色"
+  ],
+  "Rose": [
+    "Rose",
+    "Rosa",
+    "粉色"
+  ],
+  "Slate": [
+    "Gris",
+    "Cinzento",
+    "灰色"
+  ],
+  "Custom color": [
+    "Couleur personnalisée",
+    "Cor personalizada",
+    "自定义颜色"
+  ],
+  "Create color": [
+    "Créer une couleur",
+    "Criar cor",
+    "创建颜色"
+  ],
+  "Hex color": [
+    "Couleur hexadécimale",
+    "Cor hexadecimal",
+    "十六进制颜色"
+  ],
+  "Use color": [
+    "Utiliser",
+    "Usar cor",
+    "使用此颜色"
+  ],
+  "Enter a color as #RRGGBB.": [
+    "Saisir une couleur au format #RRGGBB.",
+    "Introduza uma cor no formato #RRGGBB.",
+    "请输入 #RRGGBB 格式的颜色。"
+  ],
+  "Green channel": [
+    "Canal vert",
+    "Canal verde",
+    "绿色通道"
+  ],
+  "Red channel": [
+    "Canal rouge",
+    "Canal vermelho",
+    "红色通道"
+  ],
+  "Blue channel": [
+    "Canal bleu",
+    "Canal azul",
+    "蓝色通道"
+  ],
+  "Show in Quick log": [
+    "Afficher dans Prise rapide",
+    "Mostrar no registo rápido",
+    "显示在快速记录中"
+  ],
+  "Save medicine": [
+    "Enregistrer",
+    "Guardar medicamento",
+    "保存药物"
+  ],
+  "Archive": [
+    "Archiver",
+    "Arquivar",
+    "归档"
+  ],
+  "Archive %s?": [
+    "Archiver %s ?",
+    "Arquivar %s?",
+    "归档 %s？"
+  ],
+  "Your dose history will be kept.": [
+    "L’historique des prises sera conservé.",
+    "O histórico de tomas será mantido.",
+    "服药历史记录会保留。"
+  ],
+  "Medicine saved": [
+    "Médicament enregistré",
+    "Medicamento guardado",
+    "药物已保存"
+  ],
+  "Dose taken": [
+    "Prise du médicament",
+    "Toma do medicamento",
+    "服药时间"
+  ],
+  "Set onset time": [
+    "Définir le début des effets",
+    "Definir início dos efeitos",
+    "设置起效时间"
+  ],
+  "Dose closed / effects ended": [
+    "Prise clôturée / effets terminés",
+    "Toma fechada / efeitos terminados",
+    "此次记录已结束／药效已结束"
+  ],
+  "Set end time": [
+    "Définir la fin des effets",
+    "Definir fim dos efeitos",
+    "设置结束时间"
+  ],
+  "Notes": [
+    "Notes",
+    "Notas",
+    "备注"
+  ],
+  "How did you feel? (optional)": [
+    "Votre ressenti (facultatif)",
+    "Como se sentiu? (opcional)",
+    "感受如何？（可选）"
+  ],
+  "Dose details": [
+    "Détail de la prise",
+    "Detalhes da toma",
+    "服药详情"
+  ],
+  "Delete dose": [
+    "Supprimer la prise",
+    "Eliminar toma",
+    "删除此次记录"
+  ],
+  "Save changes": [
+    "Enregistrer",
+    "Guardar alterações",
+    "保存更改"
+  ],
+  "Dose updated": [
+    "Prise modifiée",
+    "Toma atualizada",
+    "记录已更新"
+  ],
+  "Delete this dose?": [
+    "Supprimer cette prise ?",
+    "Eliminar esta toma?",
+    "删除此次服药记录？"
+  ],
+  "This removes the dose and its events.": [
+    "La prise et ses événements seront supprimés.",
+    "A toma e os seus eventos serão eliminados.",
+    "将删除此次服药及其相关事件。"
+  ],
+  "Keep dose": [
+    "Conserver",
+    "Manter toma",
+    "保留记录"
+  ],
+  "Dose deleted": [
+    "Prise supprimée",
+    "Toma eliminada",
+    "记录已删除"
+  ],
+  "There are no events in this period.": [
+    "Aucun événement sur cette période.",
+    "Não existem eventos neste período.",
+    "此日期范围内没有事件。"
+  ],
+  "No file picker is available on this device.": [
+    "Aucun sélecteur de fichiers disponible.",
+    "Não existe seletor de ficheiros neste dispositivo.",
+    "此设备没有可用的文件选择器。"
+  ],
+  "Export failed: %s": [
+    "Échec de l’export : %s",
+    "Falha na exportação: %s",
+    "导出失败：%s"
+  ],
+  "Please prepare the export again.": [
+    "Veuillez préparer à nouveau l’export.",
+    "Prepare a exportação novamente.",
+    "请重新准备导出文件。"
+  ],
+  "Export cancelled": [
+    "Export annulé",
+    "Exportação cancelada",
+    "已取消导出"
+  ],
+  "Export saved": [
+    "Export enregistré",
+    "Exportação guardada",
+    "导出文件已保存"
+  ],
+  "Could not save the file. Please try exporting again.": [
+    "Impossible d’enregistrer le fichier. Réessayez.",
+    "Não foi possível guardar o ficheiro. Tente novamente.",
+    "无法保存文件，请重试导出。"
+  ],
+  "This launcher could not add the shortcut.": [
+    "Le lanceur n’a pas pu ajouter le raccourci.",
+    "O lançador não conseguiu adicionar o atalho.",
+    "此桌面无法添加快捷方式。"
+  ],
+  "This launcher does not support home shortcuts. Use Quick log instead.": [
+    "Ce lanceur ne gère pas les raccourcis. Utilisez Prise rapide.",
+    "Este lançador não suporta atalhos. Use o registo rápido.",
+    "此桌面不支持快捷方式，请使用快速记录。"
+  ],
+  "This medicine is archived or no longer available.": [
+    "Ce médicament est archivé ou indisponible.",
+    "Este medicamento está arquivado ou indisponível.",
+    "此药物已归档或不再可用。"
+  ],
+  "Please try again.": [
+    "Veuillez réessayer.",
+    "Tente novamente.",
+    "请重试。"
+  ],
+  "Language": [
+    "Langue",
+    "Idioma",
+    "语言"
+  ],
+  "Notifications": [
+    "Notifications",
+    "Notificações",
+    "通知"
+  ],
+  "Medication status": [
+    "Suivi des médicaments",
+    "Estado dos medicamentos",
+    "药物状态"
+  ],
+  "Active doses and quick controls": [
+    "Prises en cours et commandes rapides",
+    "Tomas em curso e controlos rápidos",
+    "正在进行的服药及快捷操作"
+  ],
+  "Show medication status": [
+    "Afficher le suivi des médicaments",
+    "Mostrar estado dos medicamentos",
+    "显示药物状态"
+  ],
+  "Expand the notification for controls.": [
+    "Développez la notification pour voir les commandes.",
+    "Expanda a notificação para ver os controlos.",
+    "展开通知即可使用快捷操作。"
+  ],
+  "Android notification settings": [
+    "Réglages Android des notifications",
+    "Definições de notificações Android",
+    "Android 通知设置"
+  ],
+  "Waiting for effects": [
+    "En attente des effets",
+    "À espera dos efeitos",
+    "等待药效"
+  ],
+  "Taken at %s": [
+    "Prise à %s",
+    "Toma às %s",
+    "%s 服药"
+  ],
+  "%d of %d doses": [
+    "Prise %d sur %d",
+    "Toma %d de %d",
+    "第 %d 次，共 %d 次"
+  ],
+  "Previous medicine": [
+    "Médicament précédent",
+    "Medicamento anterior",
+    "上一项药物"
+  ],
+  "Next medicine": [
+    "Médicament suivant",
+    "Próximo medicamento",
+    "下一项药物"
+  ],
+  "Notification permission is off. You can enable it in Android settings.": [
+    "Les notifications sont désactivées. Activez-les dans les réglages Android.",
+    "As notificações estão desativadas. Ative-as nas definições Android.",
+    "通知权限已关闭，可在 Android 设置中启用。"
+  ],
+  "On this phone": [
+    "Sur ce téléphone",
+    "Neste telemóvel",
+    "仅保存在此手机"
+  ],
+  "No account, server, or Internet access.": [
+    "Sans compte, serveur ni accès à Internet.",
+    "Sem conta, servidor ou acesso à Internet.",
+    "无需账户、服务器或互联网。"
+  ],
+  "Doses": [
+    "Prises",
+    "Tomas",
+    "服药次数"
+  ],
+  "Events": [
+    "Événements",
+    "Eventos",
+    "事件"
+  ],
+  "%d doses this month": [
+    "%d prises ce mois-ci",
+    "%d tomas este mês",
+    "本月服药 %d 次"
+  ],
+  "No records on this day": [
+    "Aucune donnée ce jour-là",
+    "Sem registos neste dia",
+    "此日期没有记录"
+  ],
+  "1 dose": [
+    "1 prise",
+    "1 toma",
+    "1 次服药"
+  ],
+  "%d doses": [
+    "%d prises",
+    "%d tomas",
+    "%d 次服药"
+  ],
+  "Last dose %s ago": [
+    "Dernière prise il y a %s",
+    "Última toma há %s",
+    "上次服药：%s前"
+  ],
+  "First recorded on %s": [
+    "Première prise enregistrée le %s",
+    "Primeira toma registada em %s",
+    "首次记录于 %s"
+  ],
+  "%s of effects": [
+    "%s d’effets",
+    "%s de efeitos",
+    "药效持续 %s"
+  ],
+  "%d min": [
+    "%d min",
+    "%d min",
+    "%d 分钟"
+  ],
+  "< 1 min": [
+    "< 1 min",
+    "< 1 min",
+    "不足 1 分钟"
+  ],
+  "%d h": [
+    "%d h",
+    "%d h",
+    "%d 小时"
+  ],
+  "%d h %d min": [
+    "%d h %d min",
+    "%d h %d min",
+    "%d 小时 %d 分钟"
+  ],
+  "%d d": [
+    "%d j",
+    "%d d",
+    "%d 天"
+  ],
+  "This dose no longer exists.": [
+    "Cette prise n’existe plus.",
+    "Esta toma já não existe.",
+    "此次服药记录已不存在。"
+  ],
+  "This dose is already closed.": [
+    "Cette prise est déjà clôturée.",
+    "Esta toma já está fechada.",
+    "此次记录已经结束。"
+  ],
+  "The effects have already been recorded.": [
+    "Les effets ont déjà été enregistrés.",
+    "Os efeitos já foram registados.",
+    "已记录过起效时间。"
+  ],
+  "The dose time must be in the past or now.": [
+    "L’heure de prise doit être passée ou actuelle.",
+    "A hora da toma deve ser passada ou atual.",
+    "服药时间不能晚于当前时间。"
+  ],
+  "Effects must start after the dose, and cannot start in the future.": [
+    "Les effets doivent commencer après la prise, sans être dans le futur.",
+    "Os efeitos devem começar após a toma, e não no futuro.",
+    "起效时间应在服药后，且不能晚于当前时间。"
+  ],
+  "The end time must follow the previous event, and cannot be in the future.": [
+    "La fin doit suivre l’événement précédent, sans être dans le futur.",
+    "O fim deve ser posterior ao evento anterior, e não no futuro.",
+    "结束时间应在上一事件之后，且不能晚于当前时间。"
+  ],
+  "Enter a medicine name (up to 80 characters).": [
+    "Saisissez un nom de médicament (80 caractères maximum).",
+    "Introduza um nome de medicamento (até 80 caracteres).",
+    "请输入药物名称，最多 80 个字符。"
+  ],
+  "Use up to 20 characters for the short name and 80 for the dose.": [
+    "Utilisez au plus 20 caractères pour le nom court et 80 pour le dosage.",
+    "Use até 20 caracteres no nome curto e 80 na dose.",
+    "简称最多 20 个字符，剂量说明最多 80 个字符。"
+  ],
+  "This medicine and dose already exist. Use the saved shortcut.": [
+    "Ce médicament et ce dosage existent déjà. Utilisez le raccourci enregistré.",
+    "Este medicamento e dose já existem. Use o atalho guardado.",
+    "此药物和剂量已存在，请使用已有快捷方式。"
+  ],
+  "This medicine is archived or no longer exists.": [
+    "Ce médicament est archivé ou n’existe plus.",
+    "Este medicamento está arquivado ou já não existe.",
+    "此药物已归档或不再存在。"
+  ],
+  "Use up to 2,000 characters for notes.": [
+    "Utilisez au maximum 2 000 caractères pour les notes.",
+    "Use até 2 000 caracteres nas notas.",
+    "备注最多 2000 个字符。"
+  ],
+  "This medicine has recorded doses. Keep it archived, or delete its doses from Journal first.": [
+    "Ce médicament a des prises enregistrées. Gardez-le archivé ou supprimez d’abord ses prises dans le journal.",
+    "Este medicamento tem tomas registadas. Mantenha-o arquivado ou elimine primeiro as tomas no histórico.",
+    "此药物已有服药记录。请保持归档，或先在记录页面删除相关服药记录。"
+  ],
+  "Previous month": [
+    "Mois précédent",
+    "Mês anterior",
+    "上个月"
+  ],
+  "Next month": [
+    "Mois suivant",
+    "Próximo mês",
+    "下个月"
+  ],
+  "%d events": [
+    "%d événements",
+    "%d eventos",
+    "%d 条事件"
+  ],
+  "Log dose: %s": [
+    "Enregistrer une prise : %s",
+    "Registar toma: %s",
+    "记录服药：%s"
+  ],
+  "Remove quick shortcut: %s": [
+    "Retirer le raccourci : %s",
+    "Remover atalho: %s",
+    "移除快捷方式：%s"
+  ],
+  "Add quick shortcut: %s": [
+    "Ajouter un raccourci : %s",
+    "Adicionar atalho: %s",
+    "添加快捷方式：%s"
+  ],
+  "This medicine is archived.": [
+    "Ce médicament est archivé.",
+    "Este medicamento está arquivado.",
+    "此药物已归档。"
+  ],
+  "This medicine has been deleted.": [
+    "Ce médicament a été supprimé.",
+    "Este medicamento foi eliminado.",
+    "此药物已删除。"
+  ],
+  "%d dose": [
+    "%d prise",
+    "%d toma",
+    "%d 次服药"
+  ],
+  "%d dose is already active for this medicine. Log a separate dose?": [
+    "%d prise est déjà en cours pour ce médicament. Enregistrer une nouvelle prise ?",
+    "Já existe %d toma em curso deste medicamento. Registar outra toma?",
+    "此药物已有 %d 次服药正在进行中。是否另记一次？"
+  ],
+  "%d dose this month": [
+    "%d prise ce mois-ci",
+    "%d toma este mês",
+    "本月服药 %d 次"
+  ],
+  "%d event": [
+    "%d événement",
+    "%d evento",
+    "%d 条事件"
+  ],
+  "%d event selected": [
+    "%d événement sélectionné",
+    "%d evento selecionado",
+    "已选择 %d 条事件"
+  ],
+  "%d saved medicine": [
+    "%d médicament enregistré",
+    "%d medicamento guardado",
+    "已保存 %d 种药物"
+  ],
+  "%d of %d dose": [
+    "Prise %d sur %d",
+    "Toma %d de %d",
+    "第 %d 次，共 %d 次"
+  ],
+  "Meds": [
+    "Médicaments",
+    "Medicação",
+    "药物"
+  ],
+  "Use the arrows to switch doses.": [
+    "Utilisez les flèches pour changer de prise.",
+    "Use as setas para mudar de toma.",
+    "使用箭头切换服药记录。"
+  ],
+  "Show notification again": [
+    "Réafficher la notification",
+    "Mostrar notificação novamente",
+    "重新显示通知"
+  ],
+  "Notification shown": [
+    "Notification affichée",
+    "Notificação apresentada",
+    "通知已显示"
+  ],
+  "Monitor effects": [
+    "Suivre les effets",
+    "Monitorizar efeitos",
+    "记录药效"
+  ],
+  "Applies to new doses.": [
+    "S’applique aux nouvelles prises.",
+    "Aplica-se às novas tomas.",
+    "适用于之后的服药记录。"
+  ],
+  "Effect monitoring is disabled for this dose.": [
+    "Le suivi des effets est désactivé pour cette prise.",
+    "A monitorização de efeitos está desativada nesta toma.",
+    "此次服药未启用药效记录。"
+  ],
+  "Taken today": [
+    "Prises enregistrées aujourd’hui",
+    "Tomas registadas hoje",
+    "今日已记录服药"
+  ],
+  "Intake only": [
+    "Prise uniquement",
+    "Só registar a toma",
+    "仅记录服药"
+  ],
+  "Pack quantity (optional)": [
+    "Quantité dans la boîte (facultatif)",
+    "Quantidade na embalagem (opcional)",
+    "包装数量（可选）"
+  ],
+  "e.g. 30": [
+    "Ex. : 30",
+    "Ex.: 30",
+    "例如：30"
+  ],
+  "Current pack: %d": [
+    "Boîte actuelle : %d",
+    "Embalagem atual: %d",
+    "当前包装剩余：%d"
+  ],
+  "Stock: %d": [
+    "Stock : %d",
+    "Stock: %d",
+    "库存：%d"
+  ],
+  "Set stock": [
+    "Définir le stock",
+    "Definir stock",
+    "设置库存"
+  ],
+  "Refill": [
+    "Nouvelle boîte",
+    "Nova embalagem",
+    "补充库存"
+  ],
+  "New pack quantity": [
+    "Quantité de la nouvelle boîte",
+    "Quantidade da nova embalagem",
+    "新包装数量"
+  ],
+  "Starts a new pack. Older doses do not change this pack.": [
+    "Démarre une nouvelle boîte. Les anciennes prises ne modifient pas son stock.",
+    "Inicia uma nova embalagem. As tomas antigas não alteram este stock.",
+    "开始新包装。之前的服药记录不会影响新包装库存。"
+  ],
+  "Stock updated": [
+    "Stock mis à jour",
+    "Stock atualizado",
+    "库存已更新"
+  ],
+  "Enter a quantity from 0 to 1,000,000,000.": [
+    "Saisissez une quantité entre 0 et 1 000 000 000.",
+    "Introduza uma quantidade entre 0 e 1 000 000 000.",
+    "请输入 0 至 1,000,000,000 的数量。"
+  ],
+  "This pack is empty. Refill it before logging a dose.": [
+    "Cette boîte est vide. Ajoutez une nouvelle boîte avant d’enregistrer une prise.",
+    "Esta embalagem está vazia. Adicione uma nova antes de registar a toma.",
+    "当前包装已空。请先补充库存，再记录服药。"
+  ],
+  "Stock changed. Please try again.": [
+    "Le stock a changé. Réessayez.",
+    "O stock mudou. Tente novamente.",
+    "库存已发生变化，请重试。"
+  ],
+  "A dose cannot be moved to a different medicine.": [
+    "Une prise ne peut pas être déplacée vers un autre médicament.",
+    "Uma toma não pode ser transferida para outro medicamento.",
+    "不能将服药记录移至另一种药物。"
+  ],
+  "Choose medicines": [
+    "Choisir les médicaments",
+    "Escolher medicamentos",
+    "选择药物"
+  ],
+  "Medicines: %d": [
+    "Médicaments : %d",
+    "Medicamentos: %d",
+    "药物：%d"
+  ],
+  "Apply": [
+    "Appliquer",
+    "Aplicar",
+    "应用"
+  ],
+  "Save": [
+    "Enregistrer",
+    "Guardar",
+    "保存"
+  ],
+  "Edit": [
+    "Modifier",
+    "Editar",
+    "编辑"
+  ],
+  "Reminders": [
+    "Rappels",
+    "Lembretes",
+    "服药提醒"
+  ],
+  "Medication reminders": [
+    "Rappels de médicaments",
+    "Lembretes de medicamentos",
+    "服药提醒"
+  ],
+  "Scheduled medication reminders": [
+    "Rappels de médicaments programmés",
+    "Lembretes de medicamentos agendados",
+    "已设定的服药提醒"
+  ],
+  "Scheduled for %s": [
+    "Prévu le %s",
+    "Agendado para %s",
+    "计划时间：%s"
+  ],
+  "Time to take %s": [
+    "Rappel de prise : %s",
+    "Hora de tomar %s",
+    "服药提醒：%s"
+  ],
+  "Allow precise reminders": [
+    "Autoriser les rappels précis",
+    "Permitir lembretes exatos",
+    "允许准时提醒"
+  ],
+  "Without this access, Android may delay reminders.": [
+    "Sans cet accès, Android peut retarder les rappels.",
+    "Sem este acesso, o Android pode atrasar os lembretes.",
+    "未授予此权限时，Android 可能延迟提醒。"
+  ],
+  "Allow notifications": [
+    "Autoriser les notifications",
+    "Permitir notificações",
+    "允许通知"
+  ],
+  "+ Add reminder": [
+    "+ Ajouter un rappel",
+    "+ Adicionar lembrete",
+    "+ 添加提醒"
+  ],
+  "Add reminder": [
+    "Ajouter un rappel",
+    "Adicionar lembrete",
+    "添加提醒"
+  ],
+  "Edit reminder": [
+    "Modifier le rappel",
+    "Editar lembrete",
+    "编辑提醒"
+  ],
+  "Delete reminder?": [
+    "Supprimer le rappel ?",
+    "Eliminar o lembrete?",
+    "删除此提醒？"
+  ],
+  "No reminders yet": [
+    "Aucun rappel",
+    "Sem lembretes",
+    "暂无提醒"
+  ],
+  "Enabled": [
+    "Activé",
+    "Ativo",
+    "已启用"
+  ],
+  "Next: %s": [
+    "Prochain : %s",
+    "Próximo: %s",
+    "下次：%s"
+  ],
+  "Frequency": [
+    "Fréquence",
+    "Frequência",
+    "重复频率"
+  ],
+  "Every day": [
+    "Tous les jours",
+    "Todos os dias",
+    "每天"
+  ],
+  "Weekdays": [
+    "Du lundi au vendredi",
+    "Dias úteis",
+    "工作日"
+  ],
+  "Weekends": [
+    "Week-end",
+    "Fins de semana",
+    "周末"
+  ],
+  "Weekly": [
+    "Chaque semaine",
+    "Semanal",
+    "每周"
+  ],
+  "Monthly": [
+    "Chaque mois",
+    "Mensal",
+    "每月"
+  ],
+  "Yearly": [
+    "Chaque année",
+    "Anual",
+    "每年"
+  ],
+  "Days of the week": [
+    "Jours de la semaine",
+    "Dias da semana",
+    "星期"
+  ],
+  "Days of the month": [
+    "Jours du mois",
+    "Dias do mês",
+    "每月日期"
+  ],
+  "Choose dates": [
+    "Choisir des dates",
+    "Escolher datas",
+    "选择日期"
+  ],
+  "Annual dates": [
+    "Dates annuelles",
+    "Datas anuais",
+    "年度日期"
+  ],
+  "+ Add date": [
+    "+ Ajouter une date",
+    "+ Adicionar data",
+    "+ 添加日期"
+  ],
+  "Day and month": [
+    "Jour et mois",
+    "Dia e mês",
+    "月和日"
+  ],
+  "Times": [
+    "Horaires",
+    "Horários",
+    "提醒时间"
+  ],
+  "+ Add time": [
+    "+ Ajouter un horaire",
+    "+ Adicionar horário",
+    "+ 添加时间"
+  ],
+  "Add at least one reminder time.": [
+    "Ajoutez au moins un horaire de rappel.",
+    "Adicione pelo menos um horário.",
+    "请至少添加一个提醒时间。"
+  ],
+  "Choose a reminder frequency.": [
+    "Choisissez une fréquence de rappel.",
+    "Escolha uma frequência.",
+    "请选择提醒频率。"
+  ],
+  "Choose at least one weekday.": [
+    "Choisissez au moins un jour de la semaine.",
+    "Escolha pelo menos um dia da semana.",
+    "请至少选择一周中的一天。"
+  ],
+  "Choose valid days of the month.": [
+    "Choisissez des jours du mois valides.",
+    "Escolha dias do mês válidos.",
+    "请选择有效的每月日期。"
+  ],
+  "Choose at least one annual date.": [
+    "Choisissez au moins une date annuelle.",
+    "Escolha pelo menos uma data anual.",
+    "请至少选择一个年度日期。"
+  ],
+  "No upcoming reminder date was found.": [
+    "Aucune prochaine date de rappel trouvée.",
+    "Não foi encontrada uma próxima data.",
+    "未找到下一次提醒日期。"
+  ],
+  "This reminder no longer exists.": [
+    "Ce rappel n’existe plus.",
+    "Este lembrete já não existe.",
+    "此提醒已不存在。"
+  ],
+  "Encrypted storage. Exports are not encrypted.": [
+    "Stockage chiffré. Les exports ne sont pas chiffrés.",
+    "Armazenamento encriptado. As exportações não são encriptadas.",
+    "存储已加密。导出文件不加密。"
+  ],
+  "Support Medic Logger": [
+    "Soutenir Medic Logger",
+    "Apoiar o Medic Logger",
+    "支持 Medic Logger"
+  ],
+  "Offer me a coffee": [
+    "M’offrir un café",
+    "Oferecer-me um café",
+    "请我喝杯咖啡"
+  ],
+  "No browser is available on this device.": [
+    "Aucun navigateur n’est disponible sur cet appareil.",
+    "Não existe nenhum navegador disponível neste dispositivo.",
+    "此设备上没有可用的浏览器。"
+  ],
+  "Waiting since %s": [
+    "En attente depuis %s",
+    "À espera desde %s",
+    "自 %s 起等待药效"
+  ],
+  "Effects since %s": [
+    "Effets depuis %s",
+    "Efeitos desde %s",
+    "药效自 %s 起"
+  ],
+  "Reminder sound and vibration": [
+    "Son et vibrations des rappels",
+    "Som e vibração dos lembretes",
+    "提醒声音和振动"
+  ],
+  "%d reminders": [
+    "%d rappels",
+    "%d lembretes",
+    "%d 条提醒"
+  ],
+  "Notes (optional)": [
+    "Notes (facultatif)",
+    "Notas (opcional)",
+    "备注（可选）"
+  ],
+  "%d reminder": [
+    "%d rappel",
+    "%d lembrete",
+    "%d 条提醒"
+  ],
+  "System default": [
+    "Réglage système",
+    "Predefinição do sistema",
+    "系统默认"
+  ],
+  "Sound": [
+    "Son",
+    "Som",
+    "声音"
+  ],
+  "Vibration": [
+    "Vibration",
+    "Vibração",
+    "振动"
+  ],
+  "Sound and vibration": [
+    "Son et vibration",
+    "Som e vibração",
+    "声音和振动"
+  ],
+  "Silent": [
+    "Silencieux",
+    "Silencioso",
+    "静音"
+  ],
+  "Remind me to take medication": [
+    "Me rappeler de prendre un médicament",
+    "Lembrar-me de tomar a medicação",
+    "提醒我服药"
+  ],
+  "Alert: %s": [
+    "Alerte : %s",
+    "Alerta: %s",
+    "提醒方式：%s"
+  ],
+  "Reminder alert": [
+    "Alerte de rappel",
+    "Alerta dos lembretes",
+    "服药提醒方式"
+  ],
+  "Sound: %s": [
+    "Son : %s",
+    "Som: %s",
+    "提示音：%s"
+  ],
+  "Notification sound": [
+    "Son de notification",
+    "Som de notificação",
+    "通知提示音"
+  ],
+  "Medication reminders are off in Settings": [
+    "Les rappels de prise sont désactivés dans les réglages",
+    "Os lembretes de medicação estão desativados nas definições",
+    "服药提醒已在设置中关闭"
+  ],
+  "Rate a finished monitored dose from 0 to 10.": [
+    "Notez de 0 à 10 une prise terminée avec suivi des effets.",
+    "Avalie de 0 a 10 uma toma concluída com monitorização de efeitos.",
+    "仅可为已结束药效监测的服药记录评分，范围为 0 到 10。"
+  ],
+  "Effectiveness": [
+    "Efficacité",
+    "Eficácia",
+    "药效评分"
+  ],
+  "Effectiveness (optional)": [
+    "Efficacité (facultatif)",
+    "Eficácia (opcional)",
+    "药效评分（可选）"
+  ],
+  "Effectiveness: %d/10": [
+    "Efficacité : %d/10",
+    "Eficácia: %d/10",
+    "药效评分：%d/10"
+  ],
+  "0: Not effective · 10: Very effective": [
+    "0 : Inefficace · 10 : Très efficace",
+    "0: Sem eficácia · 10: Muito eficaz",
+    "0：无效 · 10：非常有效"
+  ],
+  "Not rated": [
+    "Non noté",
+    "Sem avaliação",
+    "未评分"
+  ],
+  "Skip": [
+    "Passer",
+    "Ignorar",
+    "跳过"
+  ],
+  "Save rating": [
+    "Enregistrer la note",
+    "Guardar avaliação",
+    "保存评分"
+  ],
+  "Rating saved": [
+    "Note enregistrée",
+    "Avaliação guardada",
+    "评分已保存"
+  ],
+  "Clear rating": [
+    "Effacer la note",
+    "Limpar avaliação",
+    "清除评分"
+  ],
+  "ON/OFF cycle": [
+    "Cycle de prise/pause",
+    "Ciclo de toma/pausa",
+    "服药/停药周期"
+  ],
+  "Days ON": [
+    "Jours de prise",
+    "Dias de toma",
+    "服药天数"
+  ],
+  "Days OFF": [
+    "Jours de pause",
+    "Dias de pausa",
+    "停药天数"
+  ],
+  "First ON day": [
+    "Premier jour de prise",
+    "Primeiro dia de toma",
+    "首次服药日"
+  ],
+  "First ON day: %s": [
+    "Premier jour de prise : %s",
+    "Primeiro dia de toma: %s",
+    "首次服药日：%s"
+  ],
+  "%d days ON · %d days OFF": [
+    "%d jours de prise · %d jours de pause",
+    "%d dias de toma · %d dias de pausa",
+    "服药 %d 天 · 停药 %d 天"
+  ],
+  "ON · Day %d of %d": [
+    "Prise · Jour %d sur %d",
+    "Toma · Dia %d de %d",
+    "服药 · 第 %d 天，共 %d 天"
+  ],
+  "OFF · Day %d of %d": [
+    "Pause · Jour %d sur %d",
+    "Pausa · Dia %d de %d",
+    "停药 · 第 %d 天，共 %d 天"
+  ],
+  "Starts %s": [
+    "Début le %s",
+    "Começa em %s",
+    "开始日期：%s"
+  ],
+  "Use 1–3650 ON days and 0–3650 OFF days.": [
+    "Indiquez 1 à 3650 jours de prise et 0 à 3650 jours de pause.",
+    "Indique 1 a 3650 dias de toma e 0 a 3650 dias de pausa.",
+    "服药天数须为 1–3650，停药天数须为 0–3650。"
+  ],
+  "Choose a valid first ON day.": [
+    "Choisissez un premier jour de prise valide.",
+    "Escolha um primeiro dia de toma válido.",
+    "请选择有效的首次服药日期。"
+  ],
+  "Version %s": [
+    "Version %s",
+    "Versão %s",
+    "版本 %s"
+  ],
+  "Legal": [
+    "Mentions légales",
+    "Informações legais",
+    "法律信息"
+  ],
+  "Privacy policy": [
+    "Politique de confidentialité",
+    "Política de privacidade",
+    "隐私政策"
+  ],
+  "Medical notice": [
+    "Avertissement médical",
+    "Aviso médico",
+    "医疗声明"
+  ],
+  "Open-source licenses": [
+    "Licences open source",
+    "Licenças de código aberto",
+    "开源许可"
+  ],
+  "Publisher and contact": [
+    "Éditeur et contact",
+    "Editor e contacto",
+    "发布者与联系方式"
+  ],
+  "Contact": [
+    "Contact",
+    "Contacto",
+    "联系"
+  ],
+  "View online": [
+    "Voir en ligne",
+    "Ver online",
+    "在线查看"
+  ],
+  "Last updated": [
+    "Dernière mise à jour",
+    "Última atualização",
+    "最后更新"
+  ],
+  "Email address copied": [
+    "Adresse e-mail copiée",
+    "Endereço de e-mail copiado",
+    "电子邮箱地址已复制"
+  ],
+  "Your journal": [
+    "Votre journal",
+    "O seu diário",
+    "您的日志"
+  ],
+  "Medic Logger uses the information you enter to keep your medication journal, track stock and show reminders: medicine names, short names, doses, intake and effect times, personal ratings, notes, refills, schedules and app settings.": [
+    "Medic Logger utilise les informations que vous saisissez pour tenir votre journal de médicaments, suivre le stock et afficher des rappels : noms, noms courts, dosages, heures de prise et des effets, notes d’efficacité personnelles, commentaires, réapprovisionnements, horaires et réglages.",
+    "O Medic Logger utiliza as informações que introduz para manter o seu diário de medicação, acompanhar o stock e apresentar lembretes: nomes dos medicamentos, nomes curtos, doses, horas das tomas e dos efeitos, avaliações pessoais, notas, reposições, horários e definições da aplicação.",
+    "Medic Logger 使用您输入的信息记录用药日志、管理库存并显示提醒，包括药品名称、简称、剂量、服药及药效时间、个人评分、备注、补充库存记录、用药安排和应用设置。"
+  ],
+  "Storage and security": [
+    "Stockage et sécurité",
+    "Armazenamento e segurança",
+    "存储与安全"
+  ],
+  "Your records and settings are encrypted in the app's private storage. Encryption keys are protected by your device. Medic Logger does not upload, automatically sync or back up your journal. Zerrino cannot recover lost app data.": [
+    "Vos données et réglages sont chiffrés dans le stockage privé de l’application. Votre appareil protège les clés de chiffrement. Medic Logger ne transmet pas votre journal, ne le synchronise pas et ne le sauvegarde pas automatiquement. Zerrino ne peut pas récupérer les données perdues.",
+    "Os seus registos e definições são encriptados no armazenamento privado da aplicação. As chaves de encriptação são protegidas pelo seu dispositivo. O Medic Logger não envia, sincroniza nem faz cópias de segurança automáticas do seu diário. Zerrino não pode recuperar dados perdidos da aplicação.",
+    "您的记录和设置会加密保存在应用的私有存储空间中，加密密钥由设备保护。Medic Logger 不会上传、自动同步或自动备份您的日志。Zerrino 无法恢复丢失的应用数据。"
+  ],
+  "Collection and sharing": [
+    "Collecte et partage",
+    "Recolha e partilha",
+    "数据收集与共享"
+  ],
+  "The journal works offline, without an account, advertising, analytics or tracking. Medic Logger does not send your journal, device identifiers or usage history to Zerrino. It does not access HealthKit, Health Connect, your contacts, location, camera or microphone.": [
+    "Le journal fonctionne hors ligne, sans compte, publicité, outil d’analyse ni suivi. Medic Logger n’envoie à Zerrino ni votre journal, ni les identifiants de votre appareil, ni votre historique d’utilisation. L’application n’accède pas à HealthKit, à Health Connect, à vos contacts, à votre position, à votre caméra ni à votre microphone.",
+    "O diário funciona offline, sem conta, publicidade, análise de utilização ou rastreio. O Medic Logger não envia o seu diário, identificadores do dispositivo ou histórico de utilização a Zerrino. Não acede ao HealthKit, ao Health Connect, aos seus contactos, à localização, à câmara ou ao microfone.",
+    "日志可离线使用，无需账户，也不含广告、使用分析或跟踪功能。Medic Logger 不会向 Zerrino 发送您的日志、设备标识符或使用历史，也不会访问 HealthKit、Health Connect、通讯录、位置、相机或麦克风。"
+  ],
+  "Notifications and shortcuts": [
+    "Notifications et raccourcis",
+    "Notificações e atalhos",
+    "通知与快捷方式"
+  ],
+  "Notifications, Live Activities and home-screen shortcuts can display medicine names and status. Control their visibility in Medic Logger and your device settings. Notification permission is used for medication status and reminders; Android alarm access helps deliver reminders at the chosen time.": [
+    "Les notifications, les activités en direct et les raccourcis de l’écran d’accueil peuvent afficher les noms et l’état des médicaments. Gérez leur visibilité dans Medic Logger et les réglages de votre appareil. L’autorisation de notification sert aux états et rappels de médicaments ; l’accès aux alarmes sur Android aide à les déclencher à l’heure choisie.",
+    "As notificações, as Atividades em Direto e os atalhos no ecrã principal podem mostrar os nomes e o estado dos medicamentos. Controle a sua visibilidade no Medic Logger e nas definições do dispositivo. A permissão de notificações é usada para estados e lembretes de medicação; o acesso a alarmes no Android ajuda a apresentar os lembretes à hora escolhida.",
+    "通知、实时活动和主屏幕快捷方式可能显示药品名称及状态。您可在 Medic Logger 和设备设置中控制其显示方式。通知权限用于显示用药状态和提醒；Android 闹钟权限有助于在您选择的时间发送提醒。"
+  ],
+  "Exports": [
+    "Exports",
+    "Exportações",
+    "导出文件"
+  ],
+  "Exports are not encrypted, including ZIP files. You choose where to save or share them. A cloud provider or recipient you select handles that copy under its own policies. Protect exported files that contain health information.": [
+    "Les exports ne sont pas chiffrés, y compris les fichiers ZIP. Vous choisissez où les enregistrer ou les partager. Le fournisseur de stockage en ligne ou le destinataire choisi traite cette copie selon ses propres règles. Protégez les fichiers exportés qui contiennent des informations de santé.",
+    "As exportações não são encriptadas, incluindo os ficheiros ZIP. Escolhe onde as guardar ou partilhar. O fornecedor de armazenamento na nuvem ou destinatário que selecionar trata essa cópia segundo as suas próprias políticas. Proteja os ficheiros exportados que contêm informações de saúde.",
+    "导出文件（包括 ZIP 文件）不会加密。您自行选择保存或分享的位置。您选择的云存储服务商或接收者将根据其自身政策处理该副本。请妥善保护包含健康信息的导出文件。"
+  ],
+  "Retention and deletion": [
+    "Conservation et suppression",
+    "Conservação e eliminação",
+    "保留与删除"
+  ],
+  "Keep records for as long as you choose. Delete doses from Journal, then delete medicines once their doses are removed. Archiving keeps history. Clear app storage on Android or choose Delete App on iOS to remove the local journal; Offload App on iOS retains data. Delete exported files separately.": [
+    "Vous choisissez la durée de conservation des données. Supprimez les prises dans Journal, puis les médicaments une fois leurs prises supprimées. L’archivage conserve l’historique. Pour supprimer le journal local, effacez le stockage de l’application sur Android ou choisissez Supprimer l’app sur iOS ; Décharger l’app sur iOS conserve les données. Supprimez les exports séparément.",
+    "Guarde os registos durante o tempo que desejar. Elimine as tomas no Diário e depois os medicamentos quando já não tiverem tomas. Arquivar mantém o histórico. Limpe o armazenamento da aplicação no Android ou escolha Apagar aplicação no iOS para remover o diário local; Desinstalar aplicação no iOS mantém os dados. Elimine os ficheiros exportados separadamente.",
+    "记录的保留时间由您决定。先在日志中删除服药记录，再删除没有相关记录的药品。归档会保留历史。若要删除本地日志，请在 Android 中清除应用存储空间，或在 iOS 中选择“删除 App”；iOS 的“卸载 App”会保留数据。导出文件需另行删除。"
+  ],
+  "External links and support": [
+    "Liens externes et assistance",
+    "Ligações externas e apoio",
+    "外部链接与支持"
+  ],
+  "Opening a website gives that site your browser's normal connection information. Ko-fi and its payment providers handle optional donations under their own policies. Medic Logger includes no journal data in these links. If you email support, Zerrino receives your email address and message to respond and keeps them only as needed for that request and applicable legal obligations. Include health information only if you choose to share it.": [
+    "Ouvrir un site lui transmet les informations de connexion habituelles de votre navigateur. Ko-fi et ses prestataires de paiement traitent les dons facultatifs selon leurs propres règles. Medic Logger n’inclut aucune donnée du journal dans ces liens. Si vous écrivez à l’assistance, Zerrino reçoit votre adresse e-mail et votre message pour vous répondre et les conserve uniquement le temps nécessaire à cette demande et aux obligations légales applicables. Ne joignez des données de santé que si vous souhaitez les partager.",
+    "Ao abrir um site, este recebe as informações normais de ligação do seu navegador. O Ko-fi e os seus prestadores de pagamento tratam os donativos opcionais segundo as suas próprias políticas. O Medic Logger não inclui dados do diário nestas ligações. Se contactar o apoio por e-mail, Zerrino recebe o seu endereço e mensagem para responder e conserva-os apenas durante o tempo necessário para esse pedido e obrigações legais aplicáveis. Inclua informações de saúde apenas se optar por as partilhar.",
+    "打开网站时，该网站会接收浏览器正常连接所需的信息。Ko-fi 及其支付服务商依据各自的政策处理自愿捐赠。Medic Logger 不会在这些链接中包含日志数据。如果您通过电子邮件联系支持，Zerrino 会接收您的邮箱地址和消息以作回复，并仅在处理该请求及履行适用法律义务所需的期间保留这些信息。只有在您自愿分享时才请提供健康信息。"
+  ],
+  "Policy updates": [
+    "Mises à jour de la politique",
+    "Atualizações da política",
+    "政策更新"
+  ],
+  "Changes to data handling will be reflected in the policy included with the app and its public version. The date below identifies this version. Contact Zerrino with privacy questions.": [
+    "Toute modification du traitement des données sera indiquée dans la politique intégrée à l’application et sa version publique. La date ci-dessous identifie cette version. Contactez Zerrino pour toute question relative à la confidentialité.",
+    "As alterações ao tratamento de dados serão refletidas na política incluída na aplicação e na sua versão pública. A data abaixo identifica esta versão. Contacte Zerrino para questões de privacidade.",
+    "数据处理方式如有变化，将更新应用内政策及其公开版本。下方日期表示本政策的版本日期。如有隐私问题，请联系 Zerrino。"
+  ],
+  "Personal journal": [
+    "Journal personnel",
+    "Diário pessoal",
+    "个人日志"
+  ],
+  "Medic Logger is a personal medication journal, not a medical device. It does not diagnose, treat, cure or prevent any medical condition.": [
+    "Medic Logger est un journal personnel de médicaments, pas un dispositif médical. L’application ne diagnostique, ne traite, ne guérit et ne prévient aucune maladie.",
+    "O Medic Logger é um diário pessoal de medicação, não é um dispositivo médico. Não diagnostica, trata, cura nem previne qualquer condição médica.",
+    "Medic Logger 是个人用药日志，并非医疗器械。它不会诊断、治疗、治愈或预防任何疾病。"
+  ],
+  "Medical decisions": [
+    "Décisions médicales",
+    "Decisões médicas",
+    "医疗决策"
+  ],
+  "Consult a qualified healthcare professional for medical advice and before changing treatment. Schedules are set by you; they are not prescriptions or dosing recommendations. Effectiveness scores reflect your own observations.": [
+    "Consultez un professionnel de santé qualifié pour tout conseil médical et avant de modifier un traitement. Vous définissez les horaires ; ils ne constituent ni une ordonnance ni des recommandations de dosage. Les notes d’efficacité reflètent vos observations personnelles.",
+    "Consulte um profissional de saúde qualificado para aconselhamento médico e antes de alterar o tratamento. Os horários são definidos por si; não são prescrições nem recomendações de dosagem. As avaliações de eficácia refletem as suas próprias observações.",
+    "如需医疗建议或准备更改治疗方案，请咨询合格的医疗专业人员。用药安排由您自行设置，不构成处方或剂量建议。药效评分仅反映您的个人观察。"
+  ],
+  "Reminder limitations": [
+    "Limites des rappels",
+    "Limitações dos lembretes",
+    "提醒的局限"
+  ],
+  "Reminders can be delayed or missed because of device settings, battery limits or system restrictions. Keep another way to follow your prescribed schedule. For an emergency, contact local emergency services.": [
+    "Les rappels peuvent être retardés ou ne pas apparaître en raison des réglages de l’appareil, des limites de batterie ou des restrictions du système. Prévoyez un autre moyen de respecter les horaires prescrits. En cas d’urgence, contactez les services d’urgence locaux.",
+    "Os lembretes podem atrasar-se ou não ser apresentados devido a definições do dispositivo, limites de bateria ou restrições do sistema. Mantenha outra forma de seguir o horário prescrito. Em caso de emergência, contacte os serviços de emergência locais.",
+    "设备设置、电池限制或系统限制可能导致提醒延迟或遗漏。请另备方式帮助您遵守医嘱规定的时间。如遇紧急情况，请联系当地急救服务。"
+  ]
+}

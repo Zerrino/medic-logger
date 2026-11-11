@@ -1,0 +1,898 @@
+// !$*UTF8*$!
+{
+	"archiveVersion" = 1;
+	"classes" = {
+	};
+	"objectVersion" = 60;
+	"objects" = {
+		"95410405BA841A0884FCDDBB" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.application";
+			"includeInIndex" = 0;
+			"path" = "MedicLogger.app";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"A25D2C0DF6C8A8F3F4FA21D3" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.app-extension";
+			"includeInIndex" = 0;
+			"path" = "MedicLoggerStatus.appex";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"E9E0A71403E34F91B1FC54D7" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.cfbundle";
+			"includeInIndex" = 0;
+			"path" = "MedicLoggerTests.xctest";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"99DE273ED082BA6BB3282765" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.cfbundle";
+			"includeInIndex" = 0;
+			"path" = "MedicLoggerUITests.xctest";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"EED99F0997104FEDAFA09D6F" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "folder.assetcatalog";
+			"path" = "MedicLogger/Assets.xcassets";
+			"sourceTree" = "<group>";
+		};
+		"AA70E0818A8A05225D1FF9F4" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLogger/CalendarView.swift";
+			"sourceTree" = "<group>";
+		};
+		"773E1C1672C39E17EE168F10" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLogger/Design.swift";
+			"sourceTree" = "<group>";
+		};
+		"9FC72B7629C14F8DD0D1BD29" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLogger/DoseTimeline.swift";
+			"sourceTree" = "<group>";
+		};
+		"BC7D21F7415ED0B5089F74EA" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLogger/DoseTimelineView.swift";
+			"sourceTree" = "<group>";
+		};
+		"38997A6265232222E0339A37" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLogger/ExportView.swift";
+			"sourceTree" = "<group>";
+		};
+		"30ADB347B39A1EB0EBE69646" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLogger/ExportWriter.swift";
+			"sourceTree" = "<group>";
+		};
+		"9747FF76C2E91F445477041A" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLogger/JournalView.swift";
+			"sourceTree" = "<group>";
+		};
+		"92C56D8FCD30C5989CD5A47B" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLogger/LegalContent.swift";
+			"sourceTree" = "<group>";
+		};
+		"8894927564825E9E8954F57D" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLogger/LegalView.swift";
+			"sourceTree" = "<group>";
+		};
+		"0A88C55D70A168BB502E89C0" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLogger/MedicLoggerApp.swift";
+			"sourceTree" = "<group>";
+		};
+		"3E47A2CA9D650B34158E1EF0" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLogger/MedicStore.swift";
+			"sourceTree" = "<group>";
+		};
+		"F181E3397B49098648BD9FAB" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLogger/MedicinesView.swift";
+			"sourceTree" = "<group>";
+		};
+		"692962F1CE0F3E5E306B72E2" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLogger/Models.swift";
+			"sourceTree" = "<group>";
+		};
+		"A549FFD2EE97DDAF3E58AD3D" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLogger/Notifications.swift";
+			"sourceTree" = "<group>";
+		};
+		"B654FB2B959D76EB0C3C6BE1" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLogger/Previews.swift";
+			"sourceTree" = "<group>";
+		};
+		"D78CD6BE7D0483E516F699A3" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.xml";
+			"path" = "MedicLogger/PrivacyInfo.xcprivacy";
+			"sourceTree" = "<group>";
+		};
+		"D7F606BB113415E58642CF6D" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLogger/RemindersView.swift";
+			"sourceTree" = "<group>";
+		};
+		"FBD083BC654E1D6AE21E98F9" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLogger/SecureStorage.swift";
+			"sourceTree" = "<group>";
+		};
+		"0729516A9FCA21CF42F0B630" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLogger/SettingsView.swift";
+			"sourceTree" = "<group>";
+		};
+		"AD1FEBC46FBC1DC3529F7AC9" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLogger/TodayView.swift";
+			"sourceTree" = "<group>";
+		};
+		"53E4E90B3537BA6E6A21B31E" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "file";
+			"path" = "MedicLogger/Translations.json";
+			"sourceTree" = "<group>";
+		};
+		"99C4C52A67937B6BA19D5EF6" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLogger/Translations.swift";
+			"sourceTree" = "<group>";
+		};
+		"884DA834E5E55C52C2B74C56" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLogger/WorkbookMetadata.swift";
+			"sourceTree" = "<group>";
+		};
+		"63CBDF24A32340D1D2264D29" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "file";
+			"path" = "MedicLogger/chime.wav";
+			"sourceTree" = "<group>";
+		};
+		"4A44875C14937A35541F2E76" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "file";
+			"path" = "MedicLogger/gentle.wav";
+			"sourceTree" = "<group>";
+		};
+		"AE60F9C92F96B3AFDC0D773D" = {
+			"isa" = "PBXGroup";
+			"children" = ( "EED99F0997104FEDAFA09D6F", "AA70E0818A8A05225D1FF9F4", "773E1C1672C39E17EE168F10", "9FC72B7629C14F8DD0D1BD29", "BC7D21F7415ED0B5089F74EA", "38997A6265232222E0339A37", "30ADB347B39A1EB0EBE69646", "9747FF76C2E91F445477041A", "92C56D8FCD30C5989CD5A47B", "8894927564825E9E8954F57D", "0A88C55D70A168BB502E89C0", "3E47A2CA9D650B34158E1EF0", "F181E3397B49098648BD9FAB", "692962F1CE0F3E5E306B72E2", "A549FFD2EE97DDAF3E58AD3D", "B654FB2B959D76EB0C3C6BE1", "D78CD6BE7D0483E516F699A3", "D7F606BB113415E58642CF6D", "FBD083BC654E1D6AE21E98F9", "0729516A9FCA21CF42F0B630", "AD1FEBC46FBC1DC3529F7AC9", "53E4E90B3537BA6E6A21B31E", "99C4C52A67937B6BA19D5EF6", "884DA834E5E55C52C2B74C56", "63CBDF24A32340D1D2264D29", "4A44875C14937A35541F2E76" );
+			"name" = "MedicLogger";
+			"sourceTree" = "<group>";
+		};
+		"97540043B89A5B9D25DCD563" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Shared/AccessibleColor.swift";
+			"sourceTree" = "<group>";
+		};
+		"F0E3F54FBAACD12C8210D6E0" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Shared/DoseActivity.swift";
+			"sourceTree" = "<group>";
+		};
+		"44C7E229889FE9D1BB841A79" = {
+			"isa" = "PBXGroup";
+			"children" = ( "97540043B89A5B9D25DCD563", "F0E3F54FBAACD12C8210D6E0" );
+			"name" = "Shared";
+			"sourceTree" = "<group>";
+		};
+		"C98C002695D4246D7E868C6C" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLoggerWidgets/MedicLoggerWidgets.swift";
+			"sourceTree" = "<group>";
+		};
+		"914F99EB4EBCA539466B40E5" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.xml";
+			"path" = "MedicLoggerWidgets/PrivacyInfo.xcprivacy";
+			"sourceTree" = "<group>";
+		};
+		"1BA7A80B979303415BF7AF01" = {
+			"isa" = "PBXGroup";
+			"children" = ( "C98C002695D4246D7E868C6C", "914F99EB4EBCA539466B40E5" );
+			"name" = "MedicLoggerWidgets";
+			"sourceTree" = "<group>";
+		};
+		"17903B3945C97A38DDCE9603" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLoggerTests/DoseTimelineTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"EB8D2C2587C92094F21A107D" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLoggerTests/MedicLoggerTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"C98777C1CAE83CBC2CB74875" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLoggerTests/NotificationIntegrationTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"20D4AB3CE2BBDBEB4666532D" = {
+			"isa" = "PBXGroup";
+			"children" = ( "17903B3945C97A38DDCE9603", "EB8D2C2587C92094F21A107D", "C98777C1CAE83CBC2CB74875" );
+			"name" = "MedicLoggerTests";
+			"sourceTree" = "<group>";
+		};
+		"D4A738651963F0137EDCD728" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "MedicLoggerUITests/MedicLoggerUITests.swift";
+			"sourceTree" = "<group>";
+		};
+		"7D262774F211CDE2C56035AF" = {
+			"isa" = "PBXGroup";
+			"children" = ( "D4A738651963F0137EDCD728" );
+			"name" = "MedicLoggerUITests";
+			"sourceTree" = "<group>";
+		};
+		"F8B136C2FFBC6429D3F7E7FF" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "file";
+			"path" = "Config/App-Info.plist";
+			"sourceTree" = "<group>";
+		};
+		"646A36D3D0F68D9DF6EBCBEB" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "file";
+			"path" = "Config/Widget-Info.plist";
+			"sourceTree" = "<group>";
+		};
+		"5619E268CFFE28118C19FC6A" = {
+			"isa" = "PBXGroup";
+			"children" = ( "F8B136C2FFBC6429D3F7E7FF", "646A36D3D0F68D9DF6EBCBEB" );
+			"name" = "Config";
+			"sourceTree" = "<group>";
+		};
+		"FBDC4F23F93125BBEEAE800C" = {
+			"isa" = "PBXGroup";
+			"name" = "Products";
+			"children" = ( "95410405BA841A0884FCDDBB", "A25D2C0DF6C8A8F3F4FA21D3", "E9E0A71403E34F91B1FC54D7", "99DE273ED082BA6BB3282765" );
+			"sourceTree" = "<group>";
+		};
+		"B28B7AF69320201D1CF206EB" = {
+			"isa" = "PBXGroup";
+			"children" = ( "AE60F9C92F96B3AFDC0D773D", "44C7E229889FE9D1BB841A79", "1BA7A80B979303415BF7AF01", "20D4AB3CE2BBDBEB4666532D", "7D262774F211CDE2C56035AF", "5619E268CFFE28118C19FC6A", "FBDC4F23F93125BBEEAE800C" );
+			"sourceTree" = "<group>";
+		};
+		"6F39665A4D9C7ED2E31D09B8" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "EED99F0997104FEDAFA09D6F";
+		};
+		"FDF0823A44357C620895A064" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "AA70E0818A8A05225D1FF9F4";
+		};
+		"BF7CBFF2ACCCCC0A74033075" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "773E1C1672C39E17EE168F10";
+		};
+		"AEA0555A497E71989B85B2AF" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "9FC72B7629C14F8DD0D1BD29";
+		};
+		"2E908122CD371452023ED0AA" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "BC7D21F7415ED0B5089F74EA";
+		};
+		"298FFA0C5AFA21DDB5599C40" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "38997A6265232222E0339A37";
+		};
+		"08C9EAE6CB672ECFB040B867" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "30ADB347B39A1EB0EBE69646";
+		};
+		"8E9523C49ED79B7953EF3DB1" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "9747FF76C2E91F445477041A";
+		};
+		"2509DFD95E116FE768CDF521" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "92C56D8FCD30C5989CD5A47B";
+		};
+		"3C292A41E1CF53963D04B247" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "8894927564825E9E8954F57D";
+		};
+		"267B34A283F93F8F7826918A" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "0A88C55D70A168BB502E89C0";
+		};
+		"3EE27474DF94CE1D7332E4CC" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "3E47A2CA9D650B34158E1EF0";
+		};
+		"0FB15CCBEC7F445394247DEF" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "F181E3397B49098648BD9FAB";
+		};
+		"7D7A28EEDACBA7B78EBB4C0B" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "692962F1CE0F3E5E306B72E2";
+		};
+		"91C837CF80028FD2D9EC27CC" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "A549FFD2EE97DDAF3E58AD3D";
+		};
+		"445DD449283D709ED842A0F6" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "B654FB2B959D76EB0C3C6BE1";
+		};
+		"DEE6E33CEB579B044409947A" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "D78CD6BE7D0483E516F699A3";
+		};
+		"E68D37096551803113754EF3" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "D7F606BB113415E58642CF6D";
+		};
+		"2A008967EDA901F515944BC5" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "FBD083BC654E1D6AE21E98F9";
+		};
+		"D69C3A4E905C9BAD5D90391A" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "0729516A9FCA21CF42F0B630";
+		};
+		"5D7D9A5ACDB4A93F2421133A" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "AD1FEBC46FBC1DC3529F7AC9";
+		};
+		"933533462D57DDCA19FD9E71" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "53E4E90B3537BA6E6A21B31E";
+		};
+		"3A1EB3D892AE277455BE6D1E" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "99C4C52A67937B6BA19D5EF6";
+		};
+		"C4EB63BC8D624378A0A66B08" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "884DA834E5E55C52C2B74C56";
+		};
+		"138D02925A0CFB62FA9ECC5B" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "63CBDF24A32340D1D2264D29";
+		};
+		"3F6D33F54283F23773EF652F" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "4A44875C14937A35541F2E76";
+		};
+		"539408ACA5E62DBF7278565B" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "97540043B89A5B9D25DCD563";
+		};
+		"1DBEF3D16B07D2DDAD0A1B71" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "F0E3F54FBAACD12C8210D6E0";
+		};
+		"DEB8F76EDA7CC1752FB69B39" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = ( "FDF0823A44357C620895A064", "BF7CBFF2ACCCCC0A74033075", "AEA0555A497E71989B85B2AF", "2E908122CD371452023ED0AA", "298FFA0C5AFA21DDB5599C40", "08C9EAE6CB672ECFB040B867", "8E9523C49ED79B7953EF3DB1", "2509DFD95E116FE768CDF521", "3C292A41E1CF53963D04B247", "267B34A283F93F8F7826918A", "3EE27474DF94CE1D7332E4CC", "0FB15CCBEC7F445394247DEF", "7D7A28EEDACBA7B78EBB4C0B", "91C837CF80028FD2D9EC27CC", "445DD449283D709ED842A0F6", "E68D37096551803113754EF3", "2A008967EDA901F515944BC5", "D69C3A4E905C9BAD5D90391A", "5D7D9A5ACDB4A93F2421133A", "3A1EB3D892AE277455BE6D1E", "C4EB63BC8D624378A0A66B08", "539408ACA5E62DBF7278565B", "1DBEF3D16B07D2DDAD0A1B71" );
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"7E679FCC0F824BCD3DAB08D6" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = ( "6F39665A4D9C7ED2E31D09B8", "DEE6E33CEB579B044409947A", "933533462D57DDCA19FD9E71", "138D02925A0CFB62FA9ECC5B", "3F6D33F54283F23773EF652F" );
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"2A517905731422CC01554C6B" = {
+			"isa" = "PBXContainerItemProxy";
+			"containerPortal" = "98F54143AB4E86B28C3AFEE0";
+			"proxyType" = 1;
+			"remoteGlobalIDString" = "6C5C135590A8A5FC1A2ADEDA";
+			"remoteInfo" = "MedicLoggerStatus";
+		};
+		"E5DB8C4975BD4F1CD51FCE70" = {
+			"isa" = "PBXTargetDependency";
+			"target" = "6C5C135590A8A5FC1A2ADEDA";
+			"targetProxy" = "2A517905731422CC01554C6B";
+		};
+		"5457AB9FB521F7F7EF0268A3" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "A25D2C0DF6C8A8F3F4FA21D3";
+			"settings" = {
+				"ATTRIBUTES" = ( "RemoveHeadersOnCopy" );
+			};
+		};
+		"CFFF27C96089B93150F3553B" = {
+			"isa" = "PBXCopyFilesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"dstPath" = "";
+			"dstSubfolderSpec" = 13;
+			"files" = ( "5457AB9FB521F7F7EF0268A3" );
+			"name" = "Embed App Extensions";
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"630298CED01850BB747DD8DC" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Debug";
+			"buildSettings" = {
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"SWIFT_VERSION" = "5.0";
+				"SDKROOT" = "iphoneos";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"CURRENT_PROJECT_VERSION" = "8";
+				"MARKETING_VERSION" = "1.4.2";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"SWIFT_STRICT_CONCURRENCY" = "minimal";
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "fr.mediclogger.app";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"INFOPLIST_FILE" = "Config/App-Info.plist";
+				"LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks";
+				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+				"ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME" = "AccentColor";
+				"ENABLE_PREVIEWS" = "YES";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG $(inherited)";
+				"ONLY_ACTIVE_ARCH" = "YES";
+			};
+		};
+		"CC5C4B48ECCB25AFB53FD92A" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Release";
+			"buildSettings" = {
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"SWIFT_VERSION" = "5.0";
+				"SDKROOT" = "iphoneos";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"CURRENT_PROJECT_VERSION" = "8";
+				"MARKETING_VERSION" = "1.4.2";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"SWIFT_STRICT_CONCURRENCY" = "minimal";
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "fr.mediclogger.app";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"INFOPLIST_FILE" = "Config/App-Info.plist";
+				"LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks";
+				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+				"ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME" = "AccentColor";
+				"ENABLE_PREVIEWS" = "YES";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+				"SWIFT_COMPILATION_MODE" = "wholemodule";
+			};
+		};
+		"4FC4DBAFCF01C929DFD2D229" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = ( "630298CED01850BB747DD8DC", "CC5C4B48ECCB25AFB53FD92A" );
+			"defaultConfigurationIsVisible" = 0;
+			"defaultConfigurationName" = "Release";
+		};
+		"F758AB073B4AD0D82B658834" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = "4FC4DBAFCF01C929DFD2D229";
+			"buildPhases" = ( "DEB8F76EDA7CC1752FB69B39", "7E679FCC0F824BCD3DAB08D6", "CFFF27C96089B93150F3553B" );
+			"buildRules" = (  );
+			"dependencies" = ( "E5DB8C4975BD4F1CD51FCE70" );
+			"name" = "MedicLogger";
+			"productName" = "MedicLogger";
+			"productReference" = "95410405BA841A0884FCDDBB";
+			"productType" = "com.apple.product-type.application";
+		};
+		"1F7A6B775190583B1E7E3240" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "C98C002695D4246D7E868C6C";
+		};
+		"061473475C40E09ABE0E1692" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "914F99EB4EBCA539466B40E5";
+		};
+		"412C5DB39D121AD08CF1BC44" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "97540043B89A5B9D25DCD563";
+		};
+		"B9216E56557D2D827E22E09C" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "F0E3F54FBAACD12C8210D6E0";
+		};
+		"6A4442056AFEB94356E5BD6D" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = ( "1F7A6B775190583B1E7E3240", "412C5DB39D121AD08CF1BC44", "B9216E56557D2D827E22E09C" );
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"6F920BE7A6AAF6162A01357F" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = ( "061473475C40E09ABE0E1692" );
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"EAF0D69A0B537043455A7B33" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Debug";
+			"buildSettings" = {
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"SWIFT_VERSION" = "5.0";
+				"SDKROOT" = "iphoneos";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"CURRENT_PROJECT_VERSION" = "8";
+				"MARKETING_VERSION" = "1.4.2";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"SWIFT_STRICT_CONCURRENCY" = "minimal";
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "fr.mediclogger.app.status";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"INFOPLIST_FILE" = "Config/Widget-Info.plist";
+				"LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				"APPLICATION_EXTENSION_API_ONLY" = "YES";
+				"SKIP_INSTALL" = "YES";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG $(inherited)";
+				"ONLY_ACTIVE_ARCH" = "YES";
+			};
+		};
+		"0999E97DA5141E0D5C92085E" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Release";
+			"buildSettings" = {
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"SWIFT_VERSION" = "5.0";
+				"SDKROOT" = "iphoneos";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"CURRENT_PROJECT_VERSION" = "8";
+				"MARKETING_VERSION" = "1.4.2";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"SWIFT_STRICT_CONCURRENCY" = "minimal";
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "fr.mediclogger.app.status";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"INFOPLIST_FILE" = "Config/Widget-Info.plist";
+				"LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				"APPLICATION_EXTENSION_API_ONLY" = "YES";
+				"SKIP_INSTALL" = "YES";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+				"SWIFT_COMPILATION_MODE" = "wholemodule";
+			};
+		};
+		"F797438ABAC3D46FE5724C57" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = ( "EAF0D69A0B537043455A7B33", "0999E97DA5141E0D5C92085E" );
+			"defaultConfigurationIsVisible" = 0;
+			"defaultConfigurationName" = "Release";
+		};
+		"6C5C135590A8A5FC1A2ADEDA" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = "F797438ABAC3D46FE5724C57";
+			"buildPhases" = ( "6A4442056AFEB94356E5BD6D", "6F920BE7A6AAF6162A01357F" );
+			"buildRules" = (  );
+			"dependencies" = (  );
+			"name" = "MedicLoggerStatus";
+			"productName" = "MedicLoggerStatus";
+			"productReference" = "A25D2C0DF6C8A8F3F4FA21D3";
+			"productType" = "com.apple.product-type.app-extension";
+		};
+		"F673BCDEFCCC91841185C943" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "17903B3945C97A38DDCE9603";
+		};
+		"D5DBEC1F5B8DF19E56CF1AC8" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "EB8D2C2587C92094F21A107D";
+		};
+		"E4B7DA878F832263D040D598" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "C98777C1CAE83CBC2CB74875";
+		};
+		"307AF941D56F533DAFAD62E7" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = ( "F673BCDEFCCC91841185C943", "D5DBEC1F5B8DF19E56CF1AC8", "E4B7DA878F832263D040D598" );
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"7DC90697570A9CF25AE650F9" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = (  );
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"AF6E0997202DD4AED12D7A00" = {
+			"isa" = "PBXContainerItemProxy";
+			"containerPortal" = "98F54143AB4E86B28C3AFEE0";
+			"proxyType" = 1;
+			"remoteGlobalIDString" = "F758AB073B4AD0D82B658834";
+			"remoteInfo" = "MedicLogger";
+		};
+		"ED463C89262CDFE89F8CEDC5" = {
+			"isa" = "PBXTargetDependency";
+			"target" = "F758AB073B4AD0D82B658834";
+			"targetProxy" = "AF6E0997202DD4AED12D7A00";
+		};
+		"E86F954DA34280F1F00671B5" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Debug";
+			"buildSettings" = {
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"SWIFT_VERSION" = "5.0";
+				"SDKROOT" = "iphoneos";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"CURRENT_PROJECT_VERSION" = "8";
+				"MARKETING_VERSION" = "1.4.2";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"SWIFT_STRICT_CONCURRENCY" = "minimal";
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "fr.mediclogger.tests";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"ENABLE_TESTABILITY" = "YES";
+				"TEST_HOST" = "$(BUILT_PRODUCTS_DIR)/MedicLogger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MedicLogger";
+				"BUNDLE_LOADER" = "$(TEST_HOST)";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG $(inherited)";
+				"ONLY_ACTIVE_ARCH" = "YES";
+			};
+		};
+		"7D1B841AFE3EDB9E7E34922F" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Release";
+			"buildSettings" = {
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"SWIFT_VERSION" = "5.0";
+				"SDKROOT" = "iphoneos";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"CURRENT_PROJECT_VERSION" = "8";
+				"MARKETING_VERSION" = "1.4.2";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"SWIFT_STRICT_CONCURRENCY" = "minimal";
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "fr.mediclogger.tests";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"ENABLE_TESTABILITY" = "YES";
+				"TEST_HOST" = "$(BUILT_PRODUCTS_DIR)/MedicLogger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MedicLogger";
+				"BUNDLE_LOADER" = "$(TEST_HOST)";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+				"SWIFT_COMPILATION_MODE" = "wholemodule";
+			};
+		};
+		"949D5CCED351DA430FBFE1FF" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = ( "E86F954DA34280F1F00671B5", "7D1B841AFE3EDB9E7E34922F" );
+			"defaultConfigurationIsVisible" = 0;
+			"defaultConfigurationName" = "Release";
+		};
+		"EEE0F35C56BFCDFE4E8512DF" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = "949D5CCED351DA430FBFE1FF";
+			"buildPhases" = ( "307AF941D56F533DAFAD62E7", "7DC90697570A9CF25AE650F9" );
+			"buildRules" = (  );
+			"dependencies" = ( "ED463C89262CDFE89F8CEDC5" );
+			"name" = "MedicLoggerTests";
+			"productName" = "MedicLoggerTests";
+			"productReference" = "E9E0A71403E34F91B1FC54D7";
+			"productType" = "com.apple.product-type.bundle.unit-test";
+		};
+		"316E5FD795310D5DE3861E0F" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "D4A738651963F0137EDCD728";
+		};
+		"BBDADBA5FC935FE7C4E81C5B" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = ( "316E5FD795310D5DE3861E0F" );
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"A85169B06E68F2D6EAD0BD41" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = (  );
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"976259DF10BB236A4C738172" = {
+			"isa" = "PBXContainerItemProxy";
+			"containerPortal" = "98F54143AB4E86B28C3AFEE0";
+			"proxyType" = 1;
+			"remoteGlobalIDString" = "F758AB073B4AD0D82B658834";
+			"remoteInfo" = "MedicLogger";
+		};
+		"06DBD9451427809C28BCED57" = {
+			"isa" = "PBXTargetDependency";
+			"target" = "F758AB073B4AD0D82B658834";
+			"targetProxy" = "976259DF10BB236A4C738172";
+		};
+		"2E79362EB6E72B7DA6AB3B50" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Debug";
+			"buildSettings" = {
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"SWIFT_VERSION" = "5.0";
+				"SDKROOT" = "iphoneos";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"CURRENT_PROJECT_VERSION" = "8";
+				"MARKETING_VERSION" = "1.4.2";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"SWIFT_STRICT_CONCURRENCY" = "minimal";
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "fr.mediclogger.uitests";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"ENABLE_TESTABILITY" = "YES";
+				"TEST_TARGET_NAME" = "MedicLogger";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG $(inherited)";
+				"ONLY_ACTIVE_ARCH" = "YES";
+			};
+		};
+		"28650C18BCECBE66B650F048" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Release";
+			"buildSettings" = {
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"SWIFT_VERSION" = "5.0";
+				"SDKROOT" = "iphoneos";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"CURRENT_PROJECT_VERSION" = "8";
+				"MARKETING_VERSION" = "1.4.2";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"SWIFT_STRICT_CONCURRENCY" = "minimal";
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "fr.mediclogger.uitests";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"ENABLE_TESTABILITY" = "YES";
+				"TEST_TARGET_NAME" = "MedicLogger";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+				"SWIFT_COMPILATION_MODE" = "wholemodule";
+			};
+		};
+		"80764F52FB5A53E18E5D73E9" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = ( "2E79362EB6E72B7DA6AB3B50", "28650C18BCECBE66B650F048" );
+			"defaultConfigurationIsVisible" = 0;
+			"defaultConfigurationName" = "Release";
+		};
+		"2F28E7A65CC034BB33BE3F42" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = "80764F52FB5A53E18E5D73E9";
+			"buildPhases" = ( "BBDADBA5FC935FE7C4E81C5B", "A85169B06E68F2D6EAD0BD41" );
+			"buildRules" = (  );
+			"dependencies" = ( "06DBD9451427809C28BCED57" );
+			"name" = "MedicLoggerUITests";
+			"productName" = "MedicLoggerUITests";
+			"productReference" = "99DE273ED082BA6BB3282765";
+			"productType" = "com.apple.product-type.bundle.ui-testing";
+		};
+		"AA60E62D3E7BAEF305ADABEA" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Debug";
+			"buildSettings" = {
+				"CLANG_ENABLE_MODULES" = "YES";
+				"ENABLE_TESTABILITY" = "YES";
+				"SWIFT_VERSION" = "5.0";
+				"SDKROOT" = "iphoneos";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG $(inherited)";
+				"ONLY_ACTIVE_ARCH" = "YES";
+			};
+		};
+		"3D553B551D2688E2E7A15153" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Release";
+			"buildSettings" = {
+				"CLANG_ENABLE_MODULES" = "YES";
+				"ENABLE_TESTABILITY" = "YES";
+				"SWIFT_VERSION" = "5.0";
+				"SDKROOT" = "iphoneos";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+				"SWIFT_COMPILATION_MODE" = "wholemodule";
+			};
+		};
+		"13B676C172CBA85B301E7222" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = ( "AA60E62D3E7BAEF305ADABEA", "3D553B551D2688E2E7A15153" );
+			"defaultConfigurationIsVisible" = 0;
+			"defaultConfigurationName" = "Release";
+		};
+		"98F54143AB4E86B28C3AFEE0" = {
+			"isa" = "PBXProject";
+			"attributes" = {
+				"BuildIndependentTargetsInParallel" = "YES";
+				"LastSwiftUpdateCheck" = "2660";
+				"LastUpgradeCheck" = "2660";
+				"TargetAttributes" = {
+					"F758AB073B4AD0D82B658834" = {
+						"CreatedOnToolsVersion" = "26.6";
+					};
+					"6C5C135590A8A5FC1A2ADEDA" = {
+						"CreatedOnToolsVersion" = "26.6";
+					};
+					"EEE0F35C56BFCDFE4E8512DF" = {
+						"CreatedOnToolsVersion" = "26.6";
+						"TestTargetID" = "F758AB073B4AD0D82B658834";
+					};
+					"2F28E7A65CC034BB33BE3F42" = {
+						"CreatedOnToolsVersion" = "26.6";
+						"TestTargetID" = "F758AB073B4AD0D82B658834";
+					};
+				};
+			};
+			"buildConfigurationList" = "13B676C172CBA85B301E7222";
+			"compatibilityVersion" = "Xcode 15.0";
+			"developmentRegion" = "en";
+			"hasScannedForEncodings" = 0;
+			"knownRegions" = ( "en", "Base", "fr", "pt", "zh-Hans" );
+			"mainGroup" = "B28B7AF69320201D1CF206EB";
+			"productRefGroup" = "FBDC4F23F93125BBEEAE800C";
+			"projectDirPath" = "";
+			"projectRoot" = "";
+			"targets" = ( "F758AB073B4AD0D82B658834", "6C5C135590A8A5FC1A2ADEDA", "EEE0F35C56BFCDFE4E8512DF", "2F28E7A65CC034BB33BE3F42" );
+		};
+	};
+	"rootObject" = "98F54143AB4E86B28C3AFEE0";
+}

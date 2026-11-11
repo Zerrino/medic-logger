@@ -1,0 +1,37 @@
+.gradle/
+.tools/
+.signing/
+local.properties
+**/build/
+*.jks
+*.keystore
+signing.properties
+.DS_Store
+artifacts/*.apk
+artifacts/*.json
+artifacts/*.csv
+artifacts/*.xlsx
+artifacts/*.zip
+artifacts/screenshots/
+
+artifacts/*.aab
+artifacts/*.apks
+ios/build/
+ios/DerivedData/
+
+# Build outputs and unpacked APK internals
+artifacts/
+build/
+ios/build/
+*.dex
+resources.arsc
+
+# Credentials: never commit
+*.pem
+*.p12
+*.pfx
+*service-account*.json
+play-*.json
+google-play-*.json
+.env
+.env.*
