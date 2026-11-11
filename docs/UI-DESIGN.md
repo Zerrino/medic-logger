@@ -47,3 +47,8 @@ No visual review was performed on this update, at the user's request.
 The privacy information card was removed from Settings at the user's request. Ongoing status and intake reminders are separate controls. Reminder alert profiles use distinct native channels because Android fixes channel behavior when it is created; the original channel remains the System default choice. A local ringtone picker and the current channel's Android controls remain available.
 
 Completed monitored doses offer an optional two-row 0–10 selection with 48 dp touch targets, an explicit Skip action and no preselected score. Intake-only doses omit it. History and calendar use the same dose cards to display the chosen score. Exported ratings remain raw numeric values.
+
+
+## Status notification redesign — 1.4.5
+
+The ongoing dose notification dropped the heavy tonal arrow squares, the duplicated "n of N doses" and the thin side bar. It now uses a small dose-colored dot beside the medicine name, a quiet chevron pair with the position between them, and Android's own Active/Over actions below. The collapsed card shows name, phase and position with the same chevrons (single doses keep inline Active/Over). Secondary tones are chosen from the system light/dark theme because notification theme attributes do not resolve reliably in custom views.
