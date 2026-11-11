@@ -2,6 +2,7 @@
 """Create the three tip products in Play Console (needs a payments profile first).
 Run: uv run --with google-auth --with requests python scripts/create-play-tips.py create
 Uses the service account key at ~/.config/play-console-mcp/service-account.json (never commit it)."""
+import json, sys, google.auth.transport.requests as tr
 from google.oauth2 import service_account
 PKG="fr.mediclogger.app"
 creds=service_account.Credentials.from_service_account_file("/Users/alexafer/.config/play-console-mcp/service-account.json",scopes=["https://www.googleapis.com/auth/androidpublisher"])
@@ -22,7 +23,7 @@ TIPS=[("tip.small","Small coffee","Optional tip to support Medic Logger. Unlocks
 mode=sys.argv[1]
 if mode=="list":
     print(json.dumps(call("GET",base+"/onetimeproducts")[1],indent=1)[:1500]); sys.exit()
-for suffix,title,desc,_,cur,units,nanos in TIPS:
+for suffix,title,desc,_,cur,units,nanos in (TIPS if mode=="create" else []):
     pid=f"{PKG}.{suffix}"
     code,conv=call("POST",base+"/pricing:convertRegionPrices",json={"price":{"currencyCode":cur,"units":str(units),"nanos":nanos}})
     if code!=200: print(conv); sys.exit(1)
@@ -35,3 +36,11 @@ for suffix,title,desc,_,cur,units,nanos in TIPS:
         "newRegionsConfig":{"usdPrice":new["usdPrice"],"eurPrice":new["eurPrice"],"availability":"AVAILABLE"}}]}
     code,res=call("PATCH",base+f"/onetimeproducts/{pid}",params={"updateMask":"listings,purchaseOptions","allowMissing":"true","regionsVersion.version":conv["regionVersion"]["version"]},json=body)
     print(json.dumps(res)[:400])
+
+if mode=="activate":
+    for suffix,*_ in TIPS:
+        pid=f"{PKG}.{suffix}"
+        code,res=call("POST",base+f"/oneTimeProducts/{pid}/purchaseOptions:batchUpdateStates",json={"requests":[{"activatePurchaseOptionRequest":{"packageName":PKG,"productId":pid,"purchaseOptionId":"standard","latencyTolerance":"PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT"}}]})
+        print(json.dumps(res)[:200])
+    code,res=call("GET",base+"/oneTimeProducts")
+    for p in res.get("oneTimeProducts",[]):print(p["productId"],[o.get("state") for o in p["purchaseOptions"]])
