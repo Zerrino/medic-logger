@@ -6,7 +6,7 @@ import json, sys, google.auth.transport.requests as tr
 from google.oauth2 import service_account
 PKG="fr.mediclogger.app"
 aab,code,name=sys.argv[1],sys.argv[2],sys.argv[3]; dry="--dry" in sys.argv
-NOTES={"en-US":"- New dark theme that follows your system setting.\n- Optional tips through Google Play (Settings > Support).\n- Better TalkBack support: buttons and tabs are announced correctly.\n- Smoother screens; exports keep going if the screen is recreated.\n- Fixed a possible crash when settings could not be saved."}
+NOTES={"en-US":"- Redesigned dose status notification: cleaner layout, readable in light and dark themes.\n- Optional tips through Google Play (Settings > Support).\n- Dark theme that follows your system setting.\n- Better TalkBack support and smoother screens."}  # edit before each release
 creds=service_account.Credentials.from_service_account_file("/Users/alexafer/.config/play-console-mcp/service-account.json",scopes=["https://www.googleapis.com/auth/androidpublisher"])
 s=tr.AuthorizedSession(creds)
 api=f"https://androidpublisher.googleapis.com/androidpublisher/v3/applications/{PKG}"
